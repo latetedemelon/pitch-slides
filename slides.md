@@ -10,6 +10,7 @@ info: |
   P.I.T.C.H. – DSL Capstone Presentation (Team 9)
 ---
 
+---
 layout: default
 class: compact
 ---
@@ -258,9 +259,10 @@ class: sea-break
 ---
 
 ---
+auto-animate: true
+---
 
 # Strategic Data Plan (1/2)
-auto-animate: true
 
 ## Objective
 
@@ -300,8 +302,10 @@ Walk through domains with quick examples as each card appears.
 -->
 
 ---
-# Strategic Data Plan (2/2)
 auto-animate: true
+---
+
+# Strategic Data Plan (2/2)
 
 ## Key Data Sources
 
