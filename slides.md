@@ -1,6 +1,7 @@
 ---
 title: P.I.T.C.H. – Portfolio Investment Tracker & Control Hub
 theme: default
+aspectRatio: 16/9
 fonts:
   sans: "GT Haptik, Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
   monospace: "Fira Code, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
@@ -12,21 +13,46 @@ info: |
 
 # Executive Summary – P.I.T.C.H.
 
-- **Problem**  
-  Technology investment process relies on emails, documents, and spreadsheets, making it hard to see status, compare options, and make timely, well-governed decisions.
-- **Our Proposal**  
-  **P.I.T.C.H. – Portfolio Investment Tracker & Control Hub**: a standardized, auditable workflow and data model for Ideas → IJs → Business Cases, with clear approvals and portfolio-level dashboards.
-- **Why It Matters**
-  - Accelerates our work by reducing cycle times and rework
-  - Improves decisions with consistent data and portfolio visibility
-  - Strengthens controls through SoD, approvals, and audit trails
-  - Supports F26 Action 11 and Technology Objective 6
-- **How We’ll Do It**  
-  Pilot in 1–2 portfolios, measure impact, refine and scale using a standard playbook.
-- **What We Need**
-  - Executive sponsorship and mandate for the pilot
-  - Agreed success criteria and decision gates
-  - Modest configuration and SME capacity
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+<v-clicks>
+
+### 🎯 Problem
+Fragmented investment process → hard to track status, compare options, make timely decisions
+
+### 💡 Our Proposal
+**P.I.T.C.H.**: Standardized workflow & data model for Ideas → IJs → Business Cases
+
+### ⭐ Why It Matters
+- Accelerates work (↓ cycle times)
+- Improves decisions (data visibility)
+- Strengthens controls (SoD, audit)
+- Aligns with F26 priorities
+
+</v-clicks>
+
+</div>
+
+<div>
+
+<v-clicks at="4">
+
+### 🚀 How We'll Do It
+Pilot → Measure → Refine → Scale
+
+### 🤝 What We Need
+- Executive sponsorship
+- Pilot mandate
+- Success criteria & gates
+- Configuration capacity
+
+</v-clicks>
+
+</div>
+
+</div>
 
 <!--
 Speaking notes:
@@ -218,26 +244,41 @@ Then link to design decisions:
 
 # Proposed Digital Solution & Strategic Alignment
 
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
 ## Proposed Solution
 
-Replace email/docs/spreadsheets with an **integrated digital IJ / BC workflow** (e.g., Atlassian-based stack) that captures required data, states, and approvals end-to-end, with:
+<v-clicks>
 
-- Standard templates and mandatory data fields
-- Role-based access and immutable audit trail
-- Portfolio dashboards and export packages for AIPS / PMO / Finance
+**Integrated digital IJ/BC workflow** with:
+
+- 📋 Standard templates & mandatory fields
+- 🔒 Role-based access & audit trail
+- 📊 Portfolio dashboards & exports
+
+</v-clicks>
+
+</div>
+
+<div>
 
 ## Strategic Alignment
 
-- **Priority – Innovate to meet customer needs**  
-  Internal practice change that **unlocks external delivery** by speeding how we select, prioritize, and fund digital initiatives and business practice improvements.
-- **Action – Execute our capital plan with an optimized delivery approach**  
-  Provides a **fit-for-purpose governance and delivery foundation** for technology investments.
-- **Commitment – Accelerating our work**  
-  Standardized workflow, metrics, and dashboards **enable smarter working** without compromising safety or controls.
-- **F26 Action Plan – Action 11**  
-  Helps prioritize and move grid-modernization and customer-facing technology investments efficiently.
-- **Technology F26 Business Plan – Objective 6**  
-  Stands up a modern, configurable, **data-driven platform** to operationalize emergent technology capabilities.
+<v-clicks at="4">
+
+- **Innovate** → Unlocks external delivery
+- **Execute capital plan** → Governance foundation
+- **Accelerate work** → Smarter working
+- **F26 Action 11** → Grid modernization
+- **Tech Objective 6** → Data-driven platform
+
+</v-clicks>
+
+</div>
+
+</div>
 
 <!--
 Speaking notes:
