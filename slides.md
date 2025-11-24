@@ -137,41 +137,64 @@ Then frame the opportunity: a single integrated, auditable workflow and dataset 
 
 # Insights from Listening
 
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
 ## Who we listened to
 
-- Capital Planning and Finance (IJ / BC owners)
-- IT Planners and BSS IT Advisors
+<v-clicks>
+
+- Capital Planning & Finance
+- IT Planners & BSS Advisors
 - Portfolio / Program Owners
-- PMO / Project Managers involved in capital delivery
+- PMO / Project Managers
+
+</v-clicks>
 
 ## What we heard
 
-<div class="bch-quote">
-“I spend hours each month reconciling **different spreadsheet versions** to answer simple status questions.”
+<v-clicks at="5">
+
+<div class="bch-quote text-sm">
+"Hours reconciling **spreadsheet versions**"
 </div>
-<div class="bch-quote">
-“We don’t have a **single place** to see where an IJ is stuck or who needs to act next.”
+
+<div class="bch-quote text-sm">
+"No **single place** to see IJ status"
 </div>
-<div class="bch-quote">
-“I’m worried a new tool will **add steps** or slow down quarter-end processes if it doesn’t respect Finance timelines.”
+
+<div class="bch-quote text-sm">
+"Hard to compare **like-for-like**"
 </div>
-<div class="bch-quote">
-“Different groups track things differently – it’s hard to tell if we’re comparing **like-for-like** between investments.”
+
+</v-clicks>
+
 </div>
-<div class="bch-quote">
-“We need **visibility across portfolios**, not just within one area, to make trade-offs.”
-</div>
+
+<div>
 
 ## How this shaped P.I.T.C.H.
 
-- **Finance system of record stays unchanged**
-  - P.I.T.C.H. focuses on **intake and decision workflow**, with exports into existing Finance/PMO tools.
-- **Pilot and phased rollout instead of big-bang**
-  - Start with 1–2 portfolios and prove value before expanding.
-- **Dashboards and standard templates are non-negotiable**
-  - Prioritized investment in a **canonical data model**, templates, and portfolio dashboards.
-- **Guided submissions & definition of ready**
-  - Added **help text, validation, and mandatory fields** to reduce rework and resubmissions.
+<v-clicks at="8">
+
+- **Finance stays system of record**
+  - P.I.T.C.H. handles intake/workflow
+  
+- **Pilot before scale**
+  - Prove value in 1–2 portfolios
+  
+- **Dashboards & templates**
+  - Canonical data model
+  
+- **Guided submissions**
+  - Validation & help text
+
+</v-clicks>
+
+</div>
+
+</div>
 
 <!--
 Speaking notes:
@@ -182,7 +205,7 @@ Summarize who you spoke with: Capital Planning/Finance, IT Planners/BSS Advisors
 Highlight 2–3 key pain points:
 - Time spent reconciling spreadsheets.
 - No single source of truth for status and next actions.
-- Finance’s concern about extra steps and quarter-end timelines.
+- Finance's concern about extra steps and quarter-end timelines.
 
 Then link to design decisions:
 - Finance remains system of record; P.I.T.C.H. covers intake/decision and exports out.
@@ -255,12 +278,16 @@ class: sea-break
 
 - **Idea / Proposal**
   - ID, title, sponsor, owner
+  
 - **Financials**
   - Costs by quarter, OPEX/CAPEX
+  
 - **Benefits**
   - Category, measures
+  
 - **Risk & Controls**
   - Rating, SoD, approvals
+  
 - **Workflow**
   - States, timestamps, audit trail
 
