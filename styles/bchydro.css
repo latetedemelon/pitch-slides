@@ -75,3 +75,51 @@
   color: white !important;
   border-bottom-color: white !important;
 }
+
+/* 1) Make slide content sit in a consistent grid */
+.slidev-layout {
+  padding: 3.2rem 3.6rem !important; /* consistent safe margins */
+}
+
+/* 2) Normalize heading spacing so H1+H2 slides align */
+.slidev-layout h1 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.9rem;
+}
+.slidev-layout h2 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+/* 3) Lists: align nested levels, reduce drift */
+.slidev-layout ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  padding-left: 1.1rem;           /* tighter left padding */
+}
+.slidev-layout ul ul {
+  padding-left: 1.0rem;           /* nested bullets don’t drift too far right */
+  margin-top: 0.25rem;
+}
+
+/* 4) Reduce raggedness by limiting line length */
+.slidev-layout > * {
+  max-width: 92%;                 /* keeps text blocks in same column width */
+}
+
+/* 5) Bullet line-height tuned for your density */
+.slidev-layout li {
+  line-height: 1.38;
+  margin-bottom: 0.25rem;
+}
+
+/* 6) Quote/callout alignment utility */
+.bch-quote {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  padding: 0.7rem 1rem;
+  border-left: 6px solid var(--bch-sea);
+  background: rgba(205,197,184,0.20); /* Sand 20% tint vibe */
+  border-radius: 8px;
+}

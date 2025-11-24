@@ -317,29 +317,31 @@ Reinforce that benefits depend on these business changes and enablers being adop
 -->
 
 ---
+layout: two-cols
+---
 
 # KPIs
 
+::left::
 ## Outcome / Decision Speed
-
 - **Idea → IJ lead time (days)** – target ↓ 40–50%
-- **IJ → Submitted Business Case (days)** – target ↓ 30–40%
-- **Status latency (days)** – gap between real state change and visible update
-- **Portfolio visibility freshness (%)** – % of items updated within last X days
+- **IJ → Submitted BC (days)** – target ↓ 30–40%
+- **Status latency (days)**
+- **Portfolio freshness (%)**
 
+::right::
 ## Quality / Control
-
-- **Data completeness ≥ 98%** for mandatory fields
+- **Data completeness ≥ 98%**
 - **Resubmission rate ↓ 50%**
-- **Audit exceptions ≤ 1 per quarter** related to IJ/BC process
-- **SoD / RBAC violations = 0**
+- **Audit exceptions ≤ 1/qtr**
+- **SoD/RBAC violations = 0**
 
 ## Adoption / Change
-
-- **Active planners per week ≥ 80%** of pilot cohort
+- **Active planners ≥ 80%**
 - **Template adherence ≥ 95%**
-- **Median user effort ↓ 30–40%** (time to prepare IJ/BC)
-- **User CSAT ≥ 8/10** for the new process
+- **Median user effort ↓ 30–40%**
+- **CSAT ≥ 8/10**
+
 
 <!--
 Speaking notes:
