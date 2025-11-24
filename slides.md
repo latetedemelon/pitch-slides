@@ -432,6 +432,7 @@ layout: two-cols
 
 # KPIs
 
+<!-- Left column: Using div with Tailwind classes for precise control -->
 <div class="pr-4">
 
 ## Outcome / Decision Speed
@@ -450,6 +451,7 @@ layout: two-cols
 
 ::right::
 
+<!-- Right column: Using Slidev's ::right:: syntax with div for consistent padding -->
 <div class="pl-4">
 
 ## Adoption / Change

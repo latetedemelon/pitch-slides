@@ -14,8 +14,9 @@ export default defineConfig({
   canvasWidth: 980,
   
   // Theme configuration
+  // Using BC Hydro Sea color (#10A3C8) from styles/bchydro.css (--bch-sea)
   themeConfig: {
-    primary: '#10A3C8', // BC Hydro Sea
+    primary: '#10A3C8',
   },
   
   // Enable drawing
