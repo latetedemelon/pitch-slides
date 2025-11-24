@@ -46,17 +46,18 @@ Don’t go into detail yet—this is just the headline story.
 layout: cover
 ---
 
-Portfolio Investment Tracker & Control Hub (P.I.T.C.H.)
+# Portfolio Investment Tracker & Control Hub
+## P.I.T.C.H.
 
-::subtitle::
-Team 9 – Capstone Project • November 16, 2025
-::
-- **Team**
-  - Robert McLellan
-  - Liliana Romo Garcia
-  - Nils Kuerten
-  - Michael Maruno
-- **Date:** November 16, 2025
+<div class="pt-12">
+  <span class="text-xl opacity-80">Team 9 – Capstone Project</span>
+  <br/>
+  <span class="text-lg opacity-70">November 16, 2025</span>
+</div>
+
+<div class="abs-br m-6 flex gap-2 text-sm opacity-60">
+  <span>R. McLellan • L. Romo Garcia • N. Kuerten • M. Maruno</span>
+</div>
 
 <!--
 Speaking notes:
@@ -70,29 +71,52 @@ Keep it short; the real content starts on the next slides.
 
 # Problem & Opportunity
 
-## Vision
+<div class="grid grid-cols-2 gap-8">
 
-Streamline and accelerate Technology work-intake and investment decisions via a single digital workflow with automated approvals, traceability, and portfolio-level reporting – in a way that **accelerates our work while protecting safety/controls and affordability**.
+<div>
 
 ## Current Problems
 
-- **Difficult to track IJ / Business Case status**
-  - Status scattered across SharePoint, spreadsheets, email threads, and people’s heads.
+<v-clicks>
+
+- **Difficult to track status**
+  - Scattered across tools
+  
 - **Low visibility & late alignment**
-  - Business ideas surface to IT and Capital Planning too late; teams are surprised by asks.
+  - Ideas surface too late
+  
 - **No consistent prioritization**
-  - Urgent and low-value items compete for the same attention and funds.
+  - Everything competes equally
+  
 - **No shared roadmap**
-  - Stakeholders can’t see what’s in the funnel, what’s stuck, or what’s approved.
+  - Can't see the funnel
 
-## Opportunity
+</v-clicks>
 
-Replace the current email/docs/spreadsheet process with an **integrated, auditable workflow** that:
+</div>
 
-- Standardizes data capture for **scope, risk, benefits, costs by quarter, and dependencies**
-- Provides **end-to-end status visibility** from idea → IJ → Business Case
-- Supports **automated approvals, risk controls, and an immutable audit trail**
-- Enables **portfolio-level reporting and decision support** for the Strategic Action Plan
+<div>
+
+## The Opportunity
+
+<v-clicks at="5">
+
+**Integrated, auditable workflow:**
+
+- ✓ Standardized data capture
+- ✓ End-to-end visibility
+- ✓ Automated approvals
+- ✓ Portfolio dashboards
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<div v-click="9" class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-green-50 rounded">
+  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
+</div>
 
 <!--
 Speaking notes:
@@ -212,44 +236,62 @@ layout: center
 class: sea-break
 ---
 
+<div class="text-center text-white">
+  <h1 class="text-6xl font-bold mb-4 !text-white !border-white">Data & Metrics</h1>
+  <p class="text-2xl opacity-90">Building the Foundation for Decision Excellence</p>
+</div>
+
 ---
 
 # Strategic Data Plan
 
+<div class="grid grid-cols-2 gap-6">
 
-## Objective
+<div>
 
-Create a **single, reliable dataset** for all Technology Investment Justifications and Business Cases that supports:
+## Core Data Model
 
-- Faster, better investment decisions
-- Portfolio-level visibility and trade-offs
-- Audit-ready controls and traceability
+<v-clicks>
 
-## Core Data Model (Examples)
+- **Idea / Proposal**
+  - ID, title, sponsor, owner
+- **Financials**
+  - Costs by quarter, OPEX/CAPEX
+- **Benefits**
+  - Category, measures
+- **Risk & Controls**
+  - Rating, SoD, approvals
+- **Workflow**
+  - States, timestamps, audit trail
 
-- **Idea / Proposal** – ID, title, description, sponsoring KBU, business owner
-- **Financials** – cost estimates by fiscal quarter/year, OPEX vs CAPEX, funding source
-- **Benefits** – description, category (customer, reliability, safety, efficiency), benefit measures
-- **Risk & Controls** – risk rating, control requirements, SoD / approval levels
-- **Workflow** – state transitions, timestamps, approvers, comments / rationale
+</v-clicks>
 
-## Key Data Sources
+</div>
 
-- **P.I.T.C.H. platform** – canonical record of IJ/BC workflow, states, approvals
-- **PMO reporting & AIPS** – project actuals, timelines, benefit realization
-- **Capital forecasting spreadsheets** – historical baselines for budget vs actuals and forecasting
+<div>
 
-## Integration Approach (Now / Next / Later)
+## Integration Approach
 
-- **Now:** P.I.T.C.H. as **system of engagement** with standard exports into AIPS / PMO tools
-- **Next:** Structured interfaces and mappings into AIPS (and potentially LeanIX) for **portfolio analytics**
-- **Later:** Explore deeper integrations or refactoring of legacy spreadsheets once model/process are stable
+<v-clicks at="6">
 
-## Data Governance
+**Now:** System of engagement
+- Exports to AIPS/PMO
 
-- Clear **data ownership** shared between Capital Planning (content) and Technology (platform)
-- **Quality checks** – completeness thresholds, validation rules, periodic reviews
-- **Retention & access** – policy-aligned retention and role-based access
+**Next:** Portfolio analytics
+- Structured interfaces
+
+**Later:** Deep integration
+- Legacy system refactoring
+
+</v-clicks>
+
+<div v-click="9" class="mt-6 p-3 bg-blue-50 rounded border-l-4 border-blue-400 text-sm">
+<strong>Goal:</strong> Single, reliable dataset for faster decisions, portfolio visibility, and audit-ready controls
+</div>
+
+</div>
+
+</div>
 
 <!--
 Speaking notes:
@@ -322,25 +364,37 @@ layout: two-cols
 
 # KPIs
 
-::left::
+<div class="pr-4">
+
 ## Outcome / Decision Speed
 - **Idea → IJ lead time (days)** – target ↓ 40–50%
 - **IJ → Submitted BC (days)** – target ↓ 30–40%
 - **Status latency (days)**
 - **Portfolio freshness (%)**
 
-::right::
 ## Quality / Control
 - **Data completeness ≥ 98%**
 - **Resubmission rate ↓ 50%**
 - **Audit exceptions ≤ 1/qtr**
 - **SoD/RBAC violations = 0**
 
+</div>
+
+::right::
+
+<div class="pl-4">
+
 ## Adoption / Change
 - **Active planners ≥ 80%**
 - **Template adherence ≥ 95%**
 - **Median user effort ↓ 30–40%**
 - **CSAT ≥ 8/10**
+
+<div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+  <p class="text-sm"><strong>Success Criteria:</strong> Pilot will be considered successful if we achieve 80% of targets across these KPIs within the pilot period.</p>
+</div>
+
+</div>
 
 
 <!--
