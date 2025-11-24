@@ -2,8 +2,6 @@
 title: P.I.T.C.H. – Portfolio Investment Tracker & Control Hub
 theme: default
 fonts:
-  # GT Haptik is the BC Hydro primary font. Keep Inter as fallback for viewers
-  # who don't have GT Haptik installed/licensed.
   sans: "GT Haptik, Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
   monospace: "Fira Code, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
 colorSchema: light
@@ -11,7 +9,6 @@ download: true
 info: |
   P.I.T.C.H. – DSL Capstone Presentation (Team 9)
 ---
-
 
 # Executive Summary – P.I.T.C.H.
 
@@ -125,11 +122,21 @@ Then frame the opportunity: a single integrated, auditable workflow and dataset 
 
 ## What we heard
 
-- “I spend hours each month reconciling **different spreadsheet versions** to answer simple status questions.”
-- “We don’t have a **single place** to see where an IJ is stuck or who needs to act next.”
-- “I’m worried a new tool will **add steps** or slow down quarter-end processes if it doesn’t respect Finance timelines.”
-- “Different groups track things differently – it’s hard to tell if we’re comparing **like-for-like** between investments.”
-- “We need **visibility across portfolios**, not just within one area, to make trade-offs.”
+<div class="bch-quote">
+“I spend hours each month reconciling **different spreadsheet versions** to answer simple status questions.”
+</div>
+<div class="bch-quote">
+“We don’t have a **single place** to see where an IJ is stuck or who needs to act next.”
+</div>
+<div class="bch-quote">
+“I’m worried a new tool will **add steps** or slow down quarter-end processes if it doesn’t respect Finance timelines.”
+</div>
+<div class="bch-quote">
+“Different groups track things differently – it’s hard to tell if we’re comparing **like-for-like** between investments.”
+</div>
+<div class="bch-quote">
+“We need **visibility across portfolios**, not just within one area, to make trade-offs.”
+</div>
 
 ## How this shaped P.I.T.C.H.
 
