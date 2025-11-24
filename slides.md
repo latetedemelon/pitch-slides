@@ -10,23 +10,45 @@ info: |
   P.I.T.C.H. – DSL Capstone Presentation (Team 9)
 ---
 
+---
+layout: default
+class: compact
+---
+
 # Executive Summary – P.I.T.C.H.
 
-- **Problem**  
-  Technology investment process relies on emails, documents, and spreadsheets, making it hard to see status, compare options, and make timely, well-governed decisions.
-- **Our Proposal**  
-  **P.I.T.C.H. – Portfolio Investment Tracker & Control Hub**: a standardized, auditable workflow and data model for Ideas → IJs → Business Cases, with clear approvals and portfolio-level dashboards.
-- **Why It Matters**
-  - Accelerates our work by reducing cycle times and rework
-  - Improves decisions with consistent data and portfolio visibility
-  - Strengthens controls through SoD, approvals, and audit trails
-  - Supports F26 Action 11 and Technology Objective 6
-- **How We’ll Do It**  
-  Pilot in 1–2 portfolios, measure impact, refine and scale using a standard playbook.
-- **What We Need**
-  - Executive sponsorship and mandate for the pilot
-  - Agreed success criteria and decision gates
-  - Modest configuration and SME capacity
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;align-items:start;">
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f9fafb;" v-click>
+    <h3 style="margin:0 0 0.4rem 0;">Problem → Opportunity</h3>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li>Fragmented emails/docs/sheets slow status checks and comparisons.</li>
+      <li>Opportunity: a single, auditable workflow for IJs/BCs.</li>
+    </ul>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f9fafb;" v-click>
+    <h3 style="margin:0 0 0.4rem 0;">What P.I.T.C.H. Is</h3>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li>Standardized IJ/BC flow with required data and approvals.</li>
+      <li>Dashboards and export packages for Finance/PMO.</li>
+    </ul>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f9fafb;" v-click>
+    <h3 style="margin:0 0 0.4rem 0;">Why It Matters</h3>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li>Faster cycle times, fewer reworks.</li>
+      <li>Consistent data for better portfolio decisions.</li>
+      <li>Stronger controls (SoD, approvals, audit trail).</li>
+      <li>Aligns with F26 Action 11 & Technology Objective 6.</li>
+    </ul>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f9fafb;" v-click>
+    <h3 style="margin:0 0 0.4rem 0;">Pilot & Support</h3>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li>Pilot in 1–2 portfolios; measure, refine, and scale via a playbook.</li>
+      <li>Needs: sponsorship, clear gates, and light config/SME capacity.</li>
+    </ul>
+  </div>
+</div>
 
 <!--
 Speaking notes:
@@ -208,14 +230,39 @@ Don’t read every bullet verbatim; keep it conversational.
 -->
 
 ---
+
+# Pilot scope & timeline
+
+::left::
+- **Scope** – 1–2 Technology portfolios with mixed IJ/BC complexity.
+- **Guardrails** – Finance stays system of record; export packages mirror today’s quarter-end needs.
+- **Readiness** – Definition of ready/done, templates, and white-glove support for early adopters.
+
+::right::
+| Phase | Timing | Outcomes |
+| --- | --- | --- |
+| **Setup** | Weeks 1–2 | Configure workflow, templates, dashboards, support runbooks |
+| **Pilot** | Weeks 3–8 | Run 8–12 items end-to-end; track KPIs and qualitative feedback |
+| **Scale/Stop/Iterate** | Weeks 9–10 | Decision on rollout path with evidence package |
+
+<!--
+Speaking notes:
+Add a concrete view of the pilot so the audience sees the commitment and safeguards.
+- Scope: start small but representative; Finance remains system of record.
+- Guardrails: exports mirror current Finance cadence; white-glove support reduces risk.
+- Timeline: setup, pilot execution, and a data-backed scale/stop/iterate decision.
+-->
+
+---
 layout: center
 class: sea-break
 ---
 
 ---
+auto-animate: true
+---
 
-# Strategic Data Plan
-
+# Strategic Data Plan (1/2)
 
 ## Objective
 
@@ -227,11 +274,38 @@ Create a **single, reliable dataset** for all Technology Investment Justificatio
 
 ## Core Data Model (Examples)
 
-- **Idea / Proposal** – ID, title, description, sponsoring KBU, business owner
-- **Financials** – cost estimates by fiscal quarter/year, OPEX vs CAPEX, funding source
-- **Benefits** – description, category (customer, reliability, safety, efficiency), benefit measures
-- **Risk & Controls** – risk rating, control requirements, SoD / approval levels
-- **Workflow** – state transitions, timestamps, approvers, comments / rationale
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.75rem;align-items:start;">
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f9fafb;" v-click>
+    <strong>Idea / Proposal</strong><br/>ID, title, description, sponsoring KBU, business owner
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f9fafb;" v-click>
+    <strong>Financials</strong><br/>Quarterly costs, OPEX vs CAPEX, funding source
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f9fafb;" v-click>
+    <strong>Benefits</strong><br/>Benefit category and measures (customer, reliability, safety, efficiency)
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f9fafb;" v-click>
+    <strong>Risk & Controls</strong><br/>Risk rating, control requirements, SoD / approval levels
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f9fafb;" v-click>
+    <strong>Workflow</strong><br/>State transitions, timestamps, approvers, comments / rationale
+  </div>
+</div>
+
+<!--
+Speaking notes:
+Position this as the data backbone and reveal the model progressively.
+
+Explain the objective: one canonical dataset supporting decisions, trade-offs, and audit.
+
+Walk through domains with quick examples as each card appears.
+-->
+
+---
+auto-animate: true
+---
+
+# Strategic Data Plan (2/2)
 
 ## Key Data Sources
 
@@ -247,21 +321,25 @@ Create a **single, reliable dataset** for all Technology Investment Justificatio
 
 ## Data Governance
 
-- Clear **data ownership** shared between Capital Planning (content) and Technology (platform)
-- **Quality checks** – completeness thresholds, validation rules, periodic reviews
-- **Retention & access** – policy-aligned retention and role-based access
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.75rem;align-items:start;">
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f0f9ff;" v-click>
+    <strong>Ownership</strong><br/>Shared between Capital Planning (content) and Technology (platform)
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f0f9ff;" v-click>
+    <strong>Quality Checks</strong><br/>Completeness thresholds, validation rules, periodic reviews
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:10px;background:#f0f9ff;" v-click>
+    <strong>Retention & Access</strong><br/>Policy-aligned retention and role-based access
+  </div>
+</div>
 
 <!--
 Speaking notes:
-Position this as the data backbone.
+Keep the animation by moving through sources → integrations → governance.
 
-Explain the objective: one canonical dataset supporting decisions, trade-offs, and audit.
+Call out that exports happen first (no disruption), then structured mappings, then deeper integrations once stable.
 
-Walk through domains: Idea/Proposal, Financials, Benefits, Risk & Controls, Workflow.
-
-Call out key sources and the Now/Next/Later approach: exports first, then structured mapping, then deeper integration.
-
-End with governance: shared ownership, quality checks, and role-based access control.
+Explain governance pillars briefly: ownership, quality, retention/access.
 -->
 
 ---
@@ -316,43 +394,45 @@ Walk from top to bottom:
 Reinforce that benefits depend on these business changes and enablers being adopted.
 -->
 
----
-layout: two-cols
----
-
 # KPIs
+class: compact
+auto-animate: true
 
-::left::
-## Outcome / Decision Speed
-- **Idea → IJ lead time (days)** – target ↓ 40–50%
-- **IJ → Submitted BC (days)** – target ↓ 30–40%
-- **Status latency (days)**
-- **Portfolio freshness (%)**
-
-::right::
-## Quality / Control
-- **Data completeness ≥ 98%**
-- **Resubmission rate ↓ 50%**
-- **Audit exceptions ≤ 1/qtr**
-- **SoD/RBAC violations = 0**
-
-## Adoption / Change
-- **Active planners ≥ 80%**
-- **Template adherence ≥ 95%**
-- **Median user effort ↓ 30–40%**
-- **CSAT ≥ 8/10**
-
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;align-items:start;">
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f9fafb;" v-click>
+    <h4 style="margin-top:0">Outcome / Decision Speed</h4>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li><strong>Idea → IJ lead time</strong> ↓ 40–50%</li>
+      <li><strong>IJ → Submitted BC</strong> ↓ 30–40%</li>
+      <li>Status latency (days)</li>
+      <li>Portfolio freshness (%)</li>
+    </ul>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f0fdf4;" v-click>
+    <h4 style="margin-top:0">Quality / Control</h4>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li><strong>Data completeness ≥ 98%</strong></li>
+      <li><strong>Resubmission rate ↓ 50%</strong></li>
+      <li>Audit exceptions ≤ 1/qtr</li>
+      <li>SoD/RBAC violations = 0</li>
+    </ul>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:12px;padding:12px;background:#f0f9ff;" v-click>
+    <h4 style="margin-top:0">Adoption / Change</h4>
+    <ul style="margin:0 0 0.2rem 0;">
+      <li>Active planners ≥ 80%</li>
+      <li>Template adherence ≥ 95%</li>
+      <li>Median user effort ↓ 30–40%</li>
+      <li>CSAT ≥ 8/10</li>
+    </ul>
+  </div>
+</div>
 
 <!--
 Speaking notes:
-Explain this is how you’ll know P.I.T.C.H. is working.
+Use the staged reveals to keep the slide uncluttered.
 
-Group KPIs:
-- Outcome/Decision Speed: lead times, status latency, data freshness.
-- Quality/Control: completeness, resubmissions, audit exceptions, SoD/RBAC.
-- Adoption/Change: active planners, template adherence, effort reduction, CSAT.
-
-Highlight a few key metrics for leaders to watch; emphasize these will guide the pilot decision to scale/iterate/stop.
+Call out one or two leading indicators from each card, then note these KPIs guide the pilot decision to scale/iterate/stop.
 -->
 
 ---
