@@ -1,0 +1,77 @@
+/* BC Hydro palette */
+:root {
+  --bch-grass:  #50B848; /* Grass */
+  --bch-sea:    #10A3C8; /* Sea */
+  --bch-granite:#3E3935; /* Granite */
+  --bch-ice:    #FFFFFF; /* Ice/white background */
+}
+
+/* Slide background + default text */
+.slidev-layout {
+  background: var(--bch-ice);
+  color: var(--bch-granite);
+  font-family: var(--slidev-fonts-sans);
+}
+
+/* Headings: GT Haptik look, bold, tight tracking */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--bch-granite);
+}
+
+/* Section-title accent: Sea underline */
+.slidev-layout h1 {
+  border-bottom: 6px solid var(--bch-sea);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+/* Bullets: slightly larger + Grass markers */
+.slidev-layout ul {
+  font-size: 1.05em;
+  line-height: 1.45;
+}
+.slidev-layout ul > li::marker {
+  color: var(--bch-grass);
+}
+
+/* Emphasis color */
+.slidev-layout strong {
+  color: var(--bch-granite);
+  font-weight: 700;
+}
+
+/* Links + callouts in Sea */
+.slidev-layout a {
+  color: var(--bch-sea);
+}
+
+/* Simple “BC Hydro card” utility */
+.bch-card {
+  border: 2px solid rgba(62,57,53,0.12);
+  border-left: 8px solid var(--bch-grass);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  background: white;
+}
+
+/* Footer (optional) */
+.slidev-layout .bch-footer {
+  position: absolute;
+  left: 36px;
+  bottom: 24px;
+  font-size: 0.7em;
+  color: rgba(62,57,53,0.75);
+}
+
+.sea-break {
+  background: var(--bch-sea) !important;
+  color: white !important;
+}
+.sea-break h1 {
+  color: white !important;
+  border-bottom-color: white !important;
+}
