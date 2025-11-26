@@ -75,19 +75,11 @@ info: |
 <!--
 Speaking notes:
 Use this slide to set the frame quickly.
-
-Hit five points:
-- Problem in one sentence: fragmented process, hard to see status or compare options.
-- What P.I.T.C.H. is: a workflow and data model for ideas to IJs to Business Cases.
-- Why it matters: accelerates work, improves decisions, strengthens controls, and aligns with F26 priorities.
-- How we’ll do it: focused pilot in 1–2 portfolios, measure, then refine and scale.
-- What we need: sponsorship, a clear pilot mandate, decision gates, and configuration/SME capacity.
-
-Don’t go into detail yet—this is just the headline story.
 -->
 
 ---
 
+---
 layout: cover
 ---
 
@@ -107,9 +99,6 @@ layout: cover
 <!--
 Speaking notes:
 Introduce the team and context.
-- Introduce yourselves as Team 9 and state this is your capstone project.
-- Briefly say that P.I.T.C.H. is about improving how BC Hydro manages Technology investment decisions.
-Keep it short; the real content starts on the next slides.
 -->
 
 ---
@@ -159,24 +148,9 @@ Keep it short; the real content starts on the next slides.
 
 </div>
 
-<div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-green-50 rounded">
+<div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
   <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
 </div>
-
-<!--
-Speaking notes:
-Anchor the pain and opportunity.
-
-Use one concrete example: reconciling multiple spreadsheets/emails just to answer a simple status question.
-
-Explain systemic problems:
-- Status scattered across tools and people.
-- Low visibility and late alignment between Business, IT, and Capital Planning.
-- No consistent way to prioritize or see trade-offs.
-- No single roadmap view.
-
-Then frame the opportunity: a single integrated, auditable workflow and dataset that standardizes key fields and provides end-to-end visibility and portfolio reporting.
--->
 
 ---
 
@@ -241,24 +215,6 @@ Then frame the opportunity: a single integrated, auditable workflow and dataset 
 
 </div>
 
-<!--
-Speaking notes:
-Show the design is grounded in conversations, not theory.
-
-Summarize who you spoke with: Capital Planning/Finance, IT Planners/BSS Advisors, Portfolio Owners, PMO/PMs.
-
-Highlight 2–3 key pain points:
-- Time spent reconciling spreadsheets.
-- No single source of truth for status and next actions.
-- Finance's concern about extra steps and quarter-end timelines.
-
-Then link to design decisions:
-- Finance remains system of record; P.I.T.C.H. covers intake/decision and exports out.
-- Pilot and phased rollout.
-- Dashboards and templates as essentials.
-- Guided submissions and clear definitions of ready/done.
--->
-
 ---
 
 # Proposed Digital Solution & Strategic Alignment
@@ -299,23 +255,9 @@ Then link to design decisions:
 
 </div>
 
-<!--
-Speaking notes:
-Explain P.I.T.C.H. in plain language as an integrated workflow and data model for Ideas → IJs → Business Cases.
-
-Call out main capabilities: templates, mandatory fields, clear states/approvals, role-based access, audit trail, dashboards, and export packages.
-
-Connect to strategy:
-- Supports “Innovate to meet customer needs”.
-- Helps “Execute our capital plan with an optimized delivery approach”.
-- Accelerates work while preserving safety and financial controls.
-- Directly supports F26 Action 11 and Technology Objective 6.
-
-Don’t read every bullet verbatim; keep it conversational.
--->
-
 ---
 
+---
 layout: center
 class: sea-break
 ---
@@ -395,22 +337,9 @@ class: sea-break
 
 </div>
 
-<!--
-Speaking notes:
-Show structured benefits thinking.
-
-Walk from top to bottom:
-- Business objectives: better/faster decisions; trustworthy data; clear portfolio view.
-- Benefits: shorter lead times, fewer resubmissions, more completeness, on-time approvals, fresher data.
-- Business changes: retiring spreadsheet-based tracking, using standard templates and dashboards in governance forums.
-- Enabling changes: configuring platform, templates, training, dashboards, handling in-flight items.
-- IS/IT enablers: the actual tools and integrations.
-
-Reinforce that benefits depend on these business changes and enablers being adopted.
--->
-
 ---
 
+---
 layout: two-cols
 ---
 
@@ -426,25 +355,13 @@ layout: two-cols
 - **Median user effort ↓ 30–40%**
 - **CSAT ≥ 8/10**
 
-<div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+<div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-sky-500">
   <p class="text-sm">
     <strong>Success Criteria:</strong> Pilot will be considered successful if we achieve 80% of targets across these KPIs within the pilot period.
   </p>
 </div>
 
 </div>
-
-<!--
-Speaking notes:
-Explain this is how you’ll know P.I.T.C.H. is working.
-
-Group KPIs:
-- Outcome/Decision Speed: lead times, status latency, data freshness.
-- Quality/Control: completeness, resubmissions, audit exceptions, SoD/RBAC.
-- Adoption/Change: active planners, template adherence, effort reduction, CSAT.
-
-Highlight a few key metrics for leaders to watch; emphasize these will guide the pilot decision to scale/iterate/stop.
--->
 
 ---
 
@@ -495,19 +412,6 @@ Highlight a few key metrics for leaders to watch; emphasize these will guide the
 
 </div>
 
-<!--
-Speaking notes:
-Be explicit about what happens next and what you need.
-
-Summarize near-term pilot actions: scope, configure, run with KPIs and support.
-
-Explain the scale-up path: iterate/scale/stop based on evidence; if scaling, codify learning in a playbook and extend with refined integrations.
-
-State the asks clearly: sponsorship, pilot mandate, resourcing, and agreed decision points.
-
-Invite them to view this as a low-risk, learning-oriented step.
--->
-
 ---
 
 # P.I.T.C.H. - A High-Level Approach
@@ -548,11 +452,6 @@ Invite them to view this as a low-risk, learning-oriented step.
 </div>
 
 </div>
-
-<!--
-Speaking notes:
-Reinforce that this is a staged, learning-led approach.
--->
 
 ---
 
@@ -628,13 +527,6 @@ Reinforce that this is a staged, learning-led approach.
 
 </div>
 
---- 
-title: Fancy Slidev Features Demo 
-theme: default 
-transition: slide-left 
-mdc: true 
-fonts: sans: Inter monospace: Fira Code 
-info: | Demo deck showing formatting & animations in Slidev. 
 ---
 
 # Fancy Slidev Demo
@@ -646,14 +538,16 @@ info: | Demo deck showing formatting & animations in Slidev.
   - View transitions
   - Layouts & Tailwind styling
   - RoughNotation highlights
-  - Interactive components (Transform, VSwitch, VDrag)
+  - Interactive components (`Transform`, `VSwitch`, `v-drag`, `v-drag-arrow`)
   - Video & YouTube embeds
 
 <v-click>
-  
+
 > Use the arrow keys ← → or click to step through animations.
 
 </v-click>
+
+---
 
 ---
 layout: cover
@@ -678,6 +572,8 @@ This slide uses:
 </v-clicks>
 
 ---
+
+---
 layout: center
 class: text-center
 transition: slide-up
@@ -696,6 +592,8 @@ Each line appears on click.
 <div>3. Great for pacing your story</div>
 
 </v-clicks>
+
+---
 
 ---
 layout: two-cols
@@ -721,14 +619,16 @@ transition: slide-right | slide-left
 </div>
 
 <div v-after>
-  <span class="font-bold text-green-600">Step 2:</span> Show the solution
+  <span class="font-bold text-emerald-600">Step 2:</span> Show the solution
 </div>
 
 <div v-after>
-  <span class="font-bold text-blue-600">Step 3:</span> Add supporting details
+  <span class="font-bold text-sky-700">Step 3:</span> Add supporting details
 </div>
 
 </div>
+
+---
 
 ---
 layout: center
@@ -748,7 +648,7 @@ transition: fade
   </v-clicks>
 </ul>
 
-
+---
 
 ---
 layout: two-cols
@@ -768,19 +668,21 @@ class: text-center
 
 <div class="grid grid-cols-3 gap-4">
 
-<div class="p-4 rounded-xl border text-center shadow">
+<div class="p-4 rounded-xl border text-center shadow bg-blue-50">
   Box 1
 </div>
 
-<div class="p-4 rounded-xl border text-center shadow">
+<div class="p-4 rounded-xl border text-center shadow bg-emerald-50">
   Box 2
 </div>
 
-<div class="p-4 rounded-xl border text-center shadow">
+<div class="p-4 rounded-xl border text-center shadow bg-slate-50">
   Box 3
 </div>
 
 </div>
+
+---
 
 ---
 layout: center
@@ -804,6 +706,8 @@ class: text-center
 </v-click>
 
 ---
+
+---
 layout: center
 transition: fade
 class: text-center
@@ -812,7 +716,7 @@ class: text-center
 # Transform – Scale & Position
 
 <Transform :scale="0.8" origin="center">
-  <div class="border rounded-2xl p-6 inline-block shadow-lg">
+  <div class="border rounded-2xl p-6 inline-block shadow-lg bg-white">
     <h2 class="text-2xl font-bold mb-2">
       Scaled Down Card
     </h2>
@@ -829,13 +733,15 @@ class: text-center
 </v-click>
 
 ---
+
+---
 layout: two-cols
 transition: slide-left
 ---
 
 # VSwitch – Step Through States
 
-- Use `<VSwitch>` to:
+- Use `<VSwitch>` / `<v-switch>` to:
   - Show different variants of the same idea
   - Drive simple “state machines” in your story
   - Cleanly separate content for each step
@@ -843,11 +749,11 @@ transition: slide-left
 ::right::
 
 <VSwitch :items="['Idea', 'Design', 'Delivery']" v-slot="{ current, index }">
-  <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center">
+  <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
     <div class="text-xs uppercase tracking-wide opacity-70 mb-2">
       Phase {{ index + 1 }}
     </div>
-    <div class="text-3xl font-bold mb-2">
+    <div class="text-3xl font-bold mb-2 text-sky-900">
       {{ current }}
     </div>
     <div class="text-sm opacity-80">
@@ -857,24 +763,28 @@ transition: slide-left
 </VSwitch>
 
 ---
+
+---
 layout: center
 transition: slide-right
 class: text-center
 ---
 
-# VDrag – Interactive Bits
+# v-drag – Interactive Bits
 
-<VDrag>
-  <div class="inline-block p-3 rounded-xl border shadow cursor-move">
+<v-drag>
+  <div class="inline-block p-3 rounded-xl border shadow cursor-move bg-white">
     🧩 Drag me around during the presentation
   </div>
-</VDrag>
+</v-drag>
 
 <v-click>
   <p class="mt-6 text-sm opacity-80">
     Use this to create interactive diagrams or playful moments.
   </p>
 </v-click>
+
+---
 
 ---
 layout: two-cols
@@ -890,12 +800,12 @@ transition: fade
 
 ::right::
 
-<!-- Video placeholder - add sample-demo.mp4 to public/ folder to enable -->
-<div v-click class="rounded-xl shadow max-w-full p-8 bg-gray-100 text-center">
-  <div class="text-4xl mb-2">🎬</div>
-  <div class="text-sm opacity-60">Video placeholder</div>
-  <div class="text-xs opacity-40 mt-1">Add sample-demo.mp4 to public/ folder</div>
-</div>
+<SlidevVideo v-click autoplay controls class="rounded-xl shadow max-w-full bg-black">
+  <source src="/sample-demo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</SlidevVideo>
+
+---
 
 ---
 layout: center
@@ -914,6 +824,8 @@ class: text-center
 </v-click>
 
 ---
+
+---
 layout: center
 transition: fade
 class: text-center
@@ -924,13 +836,15 @@ class: text-center
 <v-clicks>
 
 - Use **layouts** & **Tailwind** for structure & visual polish  
-- Use **transitions** & **view transitions** for slide-to-slide flow  
+- Use **transitions** & view transitions for slide-to-slide flow  
 - Use **`v-click` / `v-clicks` / `v-after`** to pace the narrative  
 - Use **magic-move** for code evolution  
-- Use **RoughNotation**, **Transform**, **VSwitch**, and **VDrag** for emphasis & interactivity  
+- Use **RoughNotation**, **Transform**, **VSwitch**, and **v-drag** / **v-drag-arrow** for emphasis & interactivity  
 - Use **videos & YouTube** where motion tells the story better than static images  
 
 </v-clicks>
+
+---
 
 ---
 layout: center
@@ -961,7 +875,7 @@ class: items-start
 <v-clicks>
 
 - **Headings with MDC:**  
-  `# Title {.text-4xl.text-blue-600}`
+  `# Title {.text-4xl.text-sky-800}`
 - **Callouts with Tailwind classes**
 - **Two-column layouts** via `layout: two-cols`
 - **Inline code** like <code>Idea → IJ → BC</code>
@@ -973,7 +887,7 @@ class: items-start
 
 <div class="space-y-4">
 
-  <div class="p-4 rounded-xl border-l-4 border-blue-500 bg-blue-50">
+  <div class="p-4 rounded-xl border-l-4 border-emerald-500 bg-emerald-50">
     <div class="font-semibold mb-1">Info Callout</div>
     <div class="text-sm opacity-80">
       Use Tailwind/UnoCSS utilities for quick, consistent styling.
@@ -981,15 +895,15 @@ class: items-start
   </div>
 
   <div class="grid grid-cols-3 gap-3">
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs">
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
       <div class="font-bold">Idea</div>
       <div class="opacity-70">Intake</div>
     </div>
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs">
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
       <div class="font-bold">IJ</div>
       <div class="opacity-70">Assessment</div>
     </div>
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs">
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
       <div class="font-bold">BC</div>
       <div class="opacity-70">Decision</div>
     </div>
@@ -998,38 +912,47 @@ class: items-start
 </div>
 
 ---
+
+---
 layout: center
 class: text-center
 ---
 
-# Static Arrows
+# Static Arrow Example
 
 <div class="relative inline-block">
 
   <div class="flex items-center gap-10">
-    <div class="p-4 rounded-xl border shadow min-w-[160px]">
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
       <div class="font-semibold">Idea</div>
       <div class="text-xs opacity-70">Initial concept</div>
     </div>
 
-    <div class="p-4 rounded-xl border shadow min-w-[160px]">
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
       <div class="font-semibold">IJ</div>
       <div class="text-xs opacity-70">Investment justification</div>
     </div>
 
-    <div class="p-4 rounded-xl border shadow min-w-[160px]">
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
       <div class="font-semibold">Business Case</div>
       <div class="text-xs opacity-70">Approval artifact</div>
     </div>
   </div>
 
-  <!-- Draw arrows using the built-in Arrow component -->
+  <!-- Example arrow, coordinates will need a bit of trial & error in your project -->
   <Arrow
-    from=".idea-node"
-    to=".ij-node"
-    class="hidden" />
-
+    x1="220"
+    y1="80"
+    x2="360"
+    y2="80"
+    class="text-sky-500 opacity-80" />
 </div>
+
+<p class="mt-6 text-sm opacity-70">
+  Use <code>&lt;Arrow&gt;</code> with <code>x1, y1, x2, y2</code> to point at items on the slide.
+</p>
+
+---
 
 ---
 layout: center
@@ -1042,7 +965,7 @@ class: text-center
 Use <code>&lt;v-drag-arrow&gt;</code> to create draggable arrows you can move around live.
 </p>
 
-<div class="relative inline-block p-8 border rounded-2xl">
+<div class="relative inline-block p-8 border rounded-2xl bg-white">
 
   <div class="grid grid-cols-2 gap-8">
     <div class="p-4 rounded-xl border bg-slate-50">
@@ -1052,7 +975,7 @@ Use <code>&lt;v-drag-arrow&gt;</code> to create draggable arrows you can move ar
       </div>
     </div>
 
-    <div class="p-4 rounded-xl border bg-green-50">
+    <div class="p-4 rounded-xl border bg-emerald-50">
       <div class="font-semibold mb-1">P.I.T.C.H.</div>
       <div class="text-xs opacity-80">
         Standardized workflow + dashboards
@@ -1064,6 +987,8 @@ Use <code>&lt;v-drag-arrow&gt;</code> to create draggable arrows you can move ar
   <v-drag-arrow class="pointer-events-auto" />
 
 </div>
+
+---
 
 ---
 layout: center
@@ -1079,27 +1004,28 @@ You can drag and scale elements live during the talk.
 <Transform :scale="0.9" origin="center">
   <div class="flex justify-center gap-8">
 
-    <VDrag>
+    <v-drag>
       <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
         <div class="font-semibold mb-1">Risk</div>
         <div class="text-xs opacity-80">
           Drag to “attach” it to a project live.
         </div>
       </div>
-    </VDrag>
+    </v-drag>
 
-    <VDrag>
+    <v-drag>
       <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
         <div class="font-semibold mb-1">Benefit</div>
         <div class="text-xs opacity-80">
           Move this near the relevant KPI box.
         </div>
       </div>
-    </VDrag>
+    </v-drag>
 
   </div>
 </Transform>
 
+---
 
 ---
 layout: center
@@ -1110,7 +1036,7 @@ class: text-center
 
 <div class="flex items-center justify-center gap-6 text-sm">
 
-  <div class="p-4 rounded-xl border shadow min-w-[150px]">
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
     <div class="font-semibold mb-1">Idea</div>
     <div class="opacity-70">Intake & triage</div>
   </div>
@@ -1119,7 +1045,7 @@ class: text-center
     ➜
   </div>
 
-  <div class="p-4 rounded-xl border shadow min-w-[150px]">
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
     <div class="font-semibold mb-1">IJ</div>
     <div class="opacity-70">Assessment & sizing</div>
   </div>
@@ -1128,16 +1054,15 @@ class: text-center
     ➜
   </div>
 
-  <div class="p-4 rounded-xl border shadow min-w-[150px]">
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
     <div class="font-semibold mb-1">Business Case</div>
     <div class="opacity-70">Decision & funding</div>
   </div>
 </div>
 
 <p class="mt-6 text-sm opacity-80">
-  This is just using Unicode arrows + Tailwind; for true vector arrows, use <code>Arrow</code> or <code>v-drag-arrow</code>.
+  This is just using Unicode arrows + Tailwind; for vector arrows, use <code>Arrow</code> or <code>v-drag-arrow</code>.
 </p>
-
 
 ---
 
