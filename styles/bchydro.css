@@ -13,13 +13,24 @@
   font-family: var(--slidev-fonts-sans);
 }
 
-/* Headings: GT Haptik look, bold, tight tracking */
+/* Headings: GT Haptik look, bold, tight tracking with responsive sizing */
 .slidev-layout h1,
 .slidev-layout h2,
 .slidev-layout h3 {
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--bch-granite);
+}
+
+/* Responsive font sizes using clamp() for auto-scaling */
+.slidev-layout h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.slidev-layout h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+.slidev-layout h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
 }
 
 /* Section-title accent: Sea underline */
@@ -29,13 +40,18 @@
   margin-bottom: 0.6em;
 }
 
-/* Bullets: slightly larger + Grass markers */
+/* Bullets: responsive sizing + Grass markers */
 .slidev-layout ul {
-  font-size: 1.05em;
+  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
   line-height: 1.45;
 }
 .slidev-layout ul > li::marker {
   color: var(--bch-grass);
+}
+
+/* Paragraphs: responsive sizing */
+.slidev-layout p {
+  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
 }
 
 /* Emphasis color */
