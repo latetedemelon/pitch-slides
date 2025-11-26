@@ -995,28 +995,24 @@ You can drag and scale elements live during the talk.
 
 <Transform :scale="0.9" origin="center">
   <div class="flex justify-center gap-8">
-
     <v-drag>
       <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
         <div class="font-semibold mb-1">Risk</div>
         <div class="text-xs opacity-80">
           Drag to “attach” it to a project live.
         </div>
-      </div>
+        </div>
     </v-drag>
-
     <v-drag>
       <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
         <div class="font-semibold mb-1">Benefit</div>
         <div class="text-xs opacity-80">
           Move this near the relevant KPI box.
         </div>
-      </div>
+        </div>
     </v-drag>
-
   </div>
 </Transform>
-
 ---
 
 ---
