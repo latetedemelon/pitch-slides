@@ -78,8 +78,6 @@ Use this slide to set the frame quickly.
 -->
 
 ---
-
----
 layout: cover
 ---
 
@@ -256,8 +254,6 @@ Introduce the team and context.
 </div>
 
 ---
-
----
 layout: center
 class: sea-break
 ---
@@ -336,8 +332,6 @@ class: sea-break
 </div>
 
 </div>
-
----
 
 ---
 layout: two-cols
@@ -546,8 +540,6 @@ layout: two-cols
 > Use the arrow keys ← → or click to step through animations.
 
 </v-click>
-
----
 
 ---
 layout: cover
@@ -800,12 +792,12 @@ transition: fade
 
 ::right::
 
-<SlidevVideo v-click autoplay controls class="rounded-xl shadow max-w-full bg-black">
-  <source src="/sample-demo.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</SlidevVideo>
-
----
+<!-- Video placeholder - add sample-demo.mp4 to public/ folder to enable -->
+<div v-click class="rounded-xl shadow max-w-full p-8 bg-gray-100 text-center">
+  <div class="text-4xl mb-2">🎬</div>
+  <div class="text-sm opacity-60">Video placeholder</div>
+  <div class="text-xs opacity-40 mt-1">Add sample-demo.mp4 to public/ folder</div>
+</div>
 
 ---
 layout: center
