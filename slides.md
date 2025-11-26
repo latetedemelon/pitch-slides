@@ -12,75 +12,6 @@ info: |
   P.I.T.C.H. – DSL Capstone Presentation (Team 9)
 ---
 
-# Executive Summary
-
-<div class="grid grid-cols-2 gap-6">
-
-<div>
-
-### 🎯 Problem
-
-<v-clicks>
-
-- Fragmented investment process → hard to track status, compare options, make timely decisions
-
-</v-clicks>
-
-### 💡 Our Proposal
-
-<v-clicks>
-
-- **P.I.T.C.H.**: Standardized workflow & data model for Ideas → IJs → Business Cases
-
-</v-clicks>
-
-### 🚀 How We'll Do It
-
-<v-clicks>
-
-- Pilot → Measure → Refine → Scale
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### ⭐ Why It Matters
-
-<v-clicks>
-
-- Accelerates work (↓ cycle times)
-- Improves decisions (data visibility)
-- Strengthens controls (SoD, audit)
-- Aligns with F26 priorities
-
-</v-clicks>
-
-### 🤝 What We Need
-
-<v-clicks>
-
-- Executive sponsorship
-- Pilot mandate
-- Success criteria & gates
-- Configuration capacity
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<!--
-Speaking notes:
-Use this slide to set the frame quickly.
--->
-
----
-layout: cover
----
-
 # Portfolio Investment Tracker & Control Hub
 ## aka P.I.T.C.H.
 
@@ -102,8 +33,6 @@ Introduce the team and context.
 ---
 
 # Problem & Opportunity
-
-<div class="grid grid-cols-2 gap-8">
 
 <div>
 
@@ -127,6 +56,15 @@ Introduce the team and context.
 
 </div>
 
+
+<div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
+  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
+</div>
+
+---
+
+# Opportunity
+
 <div>
 
 ## The Opportunity
@@ -144,7 +82,6 @@ Introduce the team and context.
 
 </div>
 
-</div>
 
 <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
   <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
@@ -522,6 +459,76 @@ layout: two-cols
 </div>
 
 ---
+
+# Executive Summary
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### 🎯 Problem
+
+<v-clicks>
+
+- Fragmented investment process → hard to track status, compare options, make timely decisions
+
+</v-clicks>
+
+### 💡 Our Proposal
+
+<v-clicks>
+
+- **P.I.T.C.H.**: Standardized workflow & data model for Ideas → IJs → Business Cases
+
+</v-clicks>
+
+### 🚀 How We'll Do It
+
+<v-clicks>
+
+- Pilot → Measure → Refine → Scale
+
+</v-clicks>
+
+</div>
+
+<div>
+
+### ⭐ Why It Matters
+
+<v-clicks>
+
+- Accelerates work (↓ cycle times)
+- Improves decisions (data visibility)
+- Strengthens controls (SoD, audit)
+- Aligns with F26 priorities
+
+</v-clicks>
+
+### 🤝 What We Need
+
+<v-clicks>
+
+- Executive sponsorship
+- Pilot mandate
+- Success criteria & gates
+- Configuration capacity
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+Use this slide to set the frame quickly.
+-->
+
+---
+layout: cover
+---
+
 
 # Fancy Slidev Demo
 
