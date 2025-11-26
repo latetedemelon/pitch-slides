@@ -483,4 +483,545 @@ class: sea-break
 
 
 
+
+# P.I.T.C.H. - A High-Level Approach
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+##### **Discover**
+- Map current-state processes, pain points, and control inventory
+- Identify stakeholders and RACI
+- Baseline timings (Idea→IJ, IJ→BC, approval cycle times)
+
+##### **Define**
+- Agree on **target data model**, workflow states, approval matrix, and “definition of ready/done”
+
+##### **Pilot**
+- Implement an MVP with 1–2 portfolios
+- Define explicit **success criteria** 
+
+</div>
+
+<div>
+
+##### **Evaluate**
+- Measure cycle time, approval SLA performance, audit exceptions, decision latency, data completeness
+- Capture qualitative feedback from users and leadership
+
+##### **Scale**
+- Roll out to additional portfolios with **change management, training, templates, guardrails, and support**
+
+##### **Govern**
+- Maintain a **control matrix** with automated checks, privacy/security controls, and audit requirements
+
+
+</div>
+
+</div>
+
+---
+layout: cover
+---
+
+
+# Fancy Slidev Demo
+
+- All-in-one showcase of:
+  - Transitions
+  - Click-to-reveal
+  - Magic code moves
+  - View transitions
+  - Layouts & Tailwind styling
+  - RoughNotation highlights
+  - Interactive components (`Transform`, `VSwitch`, `v-drag`, `v-drag-arrow`)
+  - Video & YouTube embeds
+
+
+
+> Use the arrow keys ← → or click to step through animations.
+
+
+
+---
+layout: cover
+class: text-white
+background: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg
+transition: fade
+---
+
+# Transitions & Layouts
+
+<div class="text-xl mt-4">
+This slide uses:
+</div>
+
+<v-clicks>
+
+- `layout: cover`
+- `background: <image-url>`
+- `transition: fade` (overrides default)
+- Text styled with utility classes
+
+</v-clicks>
+
+---
+layout: center
+class: text-center
+transition: slide-up
+---
+
+# Click-to-Reveal Basics
+
+<v-clicks>
+
+<div class="text-xl mb-4">
+Each line appears on click.
+</div>
+
+<div>1. Using the <code>&lt;v-click&gt;</code> directive</div>
+<div>2. Or the <code>&lt;v-clicks&gt;</code> wrapper</div>
+<div>3. Great for pacing your story</div>
+
+</v-clicks>
+
+---
+layout: two-cols
+transition: slide-right | slide-left
+---
+
+# `v-click` vs `v-after`
+
+<v-clicks>
+
+- `v-click` → show on a specific click
+- `v-after` → show and stay visible after a certain click
+- Combine them for progressive reveals
+
+</v-clicks>
+
+::right::
+
+<div class="space-y-3">
+
+<div v-click>
+  <span class="font-bold">Step 1:</span> Introduce the problem
+</div>
+
+<div v-after>
+  <span class="font-bold text-emerald-600">Step 2:</span> Show the solution
+</div>
+
+<div v-after>
+  <span class="font-bold text-sky-700">Step 3:</span> Add supporting details
+</div>
+
+</div>
+
+---
+layout: center
+class: text-center
+transition: fade
+---
+
+# `v-clicks` in Lists
+
+<ul class="list-disc text-left inline-block">
+  <v-clicks>
+
+  <li>Let Slidev handle click ordering for you</li>
+  <li>Cleaner syntax than adding <code>v-click</code> to each line manually</li>
+  <li>Great for bullet lists and step-by-step flows</li>
+
+  </v-clicks>
+</ul>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-center
+---
+
+# Tailwind / UnoCSS Formatting
+
+- Use utility classes for:
+  - Spacing (`mt-6`, `p-4`, `gap-4`)
+  - Layout (`grid`, `flex`, `items-center`)
+  - Typography (`text-3xl`, `font-bold`)
+- Makes design tweaks very fast
+
+::right::
+
+<div class="grid grid-cols-3 gap-4">
+
+<div class="p-4 rounded-xl border text-center shadow bg-blue-50">
+  Box 1
+</div>
+
+<div class="p-4 rounded-xl border text-center shadow bg-emerald-50">
+  Box 2
+</div>
+
+<div class="p-4 rounded-xl border text-center shadow bg-slate-50">
+  Box 3
+</div>
+
+</div>
+
+---
+layout: center
+transition: slide-down
+class: text-center
+---
+
+# RoughNotation Highlights (`v-mark`)
+
+<p class="text-2xl mb-6">
+  You can <span v-mark="'underline'">underline</span>,
+  <span v-mark="'box'">box</span>, or
+  <span v-mark="'highlight'">highlight</span>
+  important text.
+</p>
+
+
+  <p class="text-sm opacity-80">
+    These animate when they appear – perfect with <code>v-click</code>.
+  </p>
+
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Transform – Scale & Position
+
+<Transform :scale="0.8" origin="center">
+  <div class="border rounded-2xl p-6 inline-block shadow-lg bg-white">
+    <h2 class="text-2xl font-bold mb-2">
+      Scaled Down Card
+    </h2>
+    <p class="text-sm opacity-80">
+      <code>&lt;Transform&gt;</code> lets you scale, translate and rotate elements.
+    </p>
+  </div>
+</Transform>
+
+
+  <p class="mt-6 text-sm opacity-80">
+    You can animate between slides by changing the props.
+  </p>
+
+
+---
+layout: two-cols
+transition: slide-left
+---
+
+# VSwitch – Step Through States
+
+- Use `<VSwitch>` / `<v-switch>` to:
+  - Show different variants of the same idea
+  - Drive simple “state machines” in your story
+  - Cleanly separate content for each step
+
+::right::
+
+<VSwitch :items="['Idea', 'Design', 'Delivery']" v-slot="{ current, index }">
+  <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
+    <div class="text-xs uppercase tracking-wide opacity-70 mb-2">
+      Phase {{ index + 1 }}
+    </div>
+    <div class="text-3xl font-bold mb-2 text-sky-900">
+      {{ current }}
+    </div>
+    <div class="text-sm opacity-80">
+      Content can change based on the current item.
+    </div>
+  </div>
+</VSwitch>
+
+---
+layout: center
+transition: slide-right
+class: text-center
+---
+
+# v-drag – Interactive Bits
+
+<v-drag>
+  <div class="inline-block p-3 rounded-xl border shadow cursor-move bg-white">
+    🧩 Drag me around during the presentation
+  </div>
+</v-drag>
+
+
+  <p class="mt-6 text-sm opacity-80">
+    Use this to create interactive diagrams or playful moments.
+  </p>
+
+
+---
+layout: two-cols
+transition: fade
+---
+
+# Embedding Video
+
+- You can embed local videos with `<SlidevVideo>`:
+  - Supports `autoplay`, `controls`, `loop`, etc.
+  - Combine with <code>v-click</code> for timing
+- Great for demos, motion design, or product walkthroughs
+
+::right::
+
+<!-- Video placeholder - add sample-demo.mp4 to public/ folder to enable -->
+<div v-click class="rounded-xl shadow max-w-full p-8 bg-gray-100 text-center">
+  <div class="text-4xl mb-2">🎬</div>
+  <div class="text-sm opacity-60">Video placeholder</div>
+  <div class="text-xs opacity-40 mt-1">Add sample-demo.mp4 to public/ folder</div>
+</div>
+
+---
+layout: center
+transition: slide-left
+class: text-center
+---
+
+# Embedding YouTube
+
+<Youtube id="dQw4w9WgXcQ" class="max-w-3xl mx-auto rounded-xl shadow overflow-hidden" />
+
+
+  <p class="mt-6 text-sm opacity-80">
+    Replace <code>id</code> with your own video ID. You can also wrap in <code>v-click</code>.
+  </p>
+
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Combining It All
+
+<v-clicks>
+
+- Use **layouts** & **Tailwind** for structure & visual polish  
+- Use **transitions** & view transitions for slide-to-slide flow  
+- Use **`v-click` / `v-clicks` / `v-after`** to pace the narrative  
+- Use **magic-move** for code evolution  
+- Use **RoughNotation**, **Transform**, **VSwitch**, and **v-drag** / **v-drag-arrow** for emphasis & interactivity  
+- Use **videos & YouTube** where motion tells the story better than static images  
+
+</v-clicks>
+
+---
+layout: center
+transition: slide-up
+class: text-center
+---
+
+# Your Turn 🎛️
+
+<v-clicks>
+
+- Start from this deck as a template
+- Swap the text for your own content
+- Strip out features you don’t need per deck
+- Gradually add more interactivity as you get comfortable
+
+</v-clicks>
+
+---
+layout: two-cols
+class: items-start
+---
+
+# Formatting & Layout
+
+<v-clicks>
+
+- **Headings with MDC:**  
+  `# Title {.text-4xl.text-sky-800}`
+- **Callouts with Tailwind classes**
+- **Two-column layouts** via `layout: two-cols`
+- **Inline code** like <code>Idea → IJ → BC</code>
+- Combine **grid**, **flex**, and **gap** for structure
+
+</v-clicks>
+
+::right::
+
+<div class="space-y-4">
+
+  <div class="p-4 rounded-xl border-l-4 border-emerald-500 bg-emerald-50">
+    <div class="font-semibold mb-1">Info Callout</div>
+    <div class="text-sm opacity-80">
+      Use Tailwind/UnoCSS utilities for quick, consistent styling.
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-3">
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
+      <div class="font-bold">Idea</div>
+      <div class="opacity-70">Intake</div>
+    </div>
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
+      <div class="font-bold">IJ</div>
+      <div class="opacity-70">Assessment</div>
+    </div>
+    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
+      <div class="font-bold">BC</div>
+      <div class="opacity-70">Decision</div>
+    </div>
+  </div>
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# Static Arrow Example
+
+<div class="relative inline-block">
+
+  <div class="flex items-center gap-10">
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
+      <div class="font-semibold">Idea</div>
+      <div class="text-xs opacity-70">Initial concept</div>
+    </div>
+
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
+      <div class="font-semibold">IJ</div>
+      <div class="text-xs opacity-70">Investment justification</div>
+    </div>
+
+    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
+      <div class="font-semibold">Business Case</div>
+      <div class="text-xs opacity-70">Approval artifact</div>
+    </div>
+  </div>
+
+  <!-- Example arrow, coordinates will need a bit of trial & error in your project -->
+  <Arrow
+    x1="220"
+    y1="80"
+    x2="360"
+    y2="80"
+    class="text-sky-500 opacity-80" />
+</div>
+
+<p class="mt-6 text-sm opacity-70">
+  Use <code>&lt;Arrow&gt;</code> with <code>x1, y1, x2, y2</code> to point at items on the slide.
+</p>
+
+---
+layout: center
+class: text-center
+---
+
+# Draggable Arrow
+
+<p class="mb-6 text-sm opacity-80">
+Use <code>&lt;v-drag-arrow&gt;</code> to create draggable arrows you can move around live.
+</p>
+
+<div class="relative inline-block p-8 border rounded-2xl bg-white">
+
+  <div class="grid grid-cols-2 gap-8">
+    <div class="p-4 rounded-xl border bg-slate-50">
+      <div class="font-semibold mb-1">Current State</div>
+      <div class="text-xs opacity-80">
+        Emails + spreadsheets + manual chasing
+      </div>
+    </div>
+
+    <div class="p-4 rounded-xl border bg-emerald-50">
+      <div class="font-semibold mb-1">P.I.T.C.H.</div>
+      <div class="text-xs opacity-80">
+        Standardized workflow + dashboards
+      </div>
+    </div>
+  </div>
+
+  <!-- Draggable arrow overlay -->
+  <v-drag-arrow class="pointer-events-auto" />
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# Manipulation: Drag & Scale
+
+<p class="mb-6 text-sm opacity-80">
+You can drag and scale elements live during the talk.
+</p>
+
+<Transform :scale="0.9" origin="center">
+  <div class="flex justify-center gap-8">
+    <v-drag>
+      <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
+        <div class="font-semibold mb-1">Risk</div>
+        <div class="text-xs opacity-80">
+          Drag to “attach” it to a project live.
+        </div>
+        </div>
+    </v-drag>
+    <v-drag>
+      <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
+        <div class="font-semibold mb-1">Benefit</div>
+        <div class="text-xs opacity-80">
+          Move this near the relevant KPI box.
+        </div>
+        </div>
+    </v-drag>
+  </div>
+</Transform>
+
+---
+layout: center
+class: text-center
+---
+
+# Flow Overview {.text-4xl.font-bold.mb-8}
+
+<div class="flex items-center justify-center gap-6 text-sm">
+
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
+    <div class="font-semibold mb-1">Idea</div>
+    <div class="opacity-70">Intake & triage</div>
+  </div>
+
+  <div class="text-3xl">
+    ➜
+  </div>
+
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
+    <div class="font-semibold mb-1">IJ</div>
+    <div class="opacity-70">Assessment & sizing</div>
+  </div>
+
+  <div class="text-3xl">
+    ➜
+  </div>
+
+  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
+    <div class="font-semibold mb-1">Business Case</div>
+    <div class="opacity-70">Decision & funding</div>
+  </div>
+</div>
+
+<p class="mt-6 text-sm opacity-80">
+  This is just using Unicode arrows + Tailwind; for vector arrows, use <code>Arrow</code> or <code>v-drag-arrow</code>.
+</p>
+
 <style src="./styles/bchydro.css"></style>
