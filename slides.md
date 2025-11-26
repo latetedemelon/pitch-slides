@@ -564,8 +564,6 @@ This slide uses:
 </v-clicks>
 
 ---
-
----
 layout: center
 class: text-center
 transition: slide-up
@@ -584,8 +582,6 @@ Each line appears on click.
 <div>3. Great for pacing your story</div>
 
 </v-clicks>
-
----
 
 ---
 layout: two-cols
@@ -621,8 +617,6 @@ transition: slide-right | slide-left
 </div>
 
 ---
-
----
 layout: center
 class: text-center
 transition: fade
@@ -639,8 +633,6 @@ transition: fade
 
   </v-clicks>
 </ul>
-
----
 
 ---
 layout: two-cols
@@ -673,8 +665,6 @@ class: text-center
 </div>
 
 </div>
-
----
 
 ---
 layout: center
