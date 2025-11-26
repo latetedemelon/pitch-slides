@@ -890,10 +890,12 @@ transition: fade
 
 ::right::
 
-<SlidevVideo v-click autoplay controls class="rounded-xl shadow max-w-full">
-  <source src="/sample-demo.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</SlidevVideo>
+<!-- Video placeholder - add sample-demo.mp4 to public/ folder to enable -->
+<div v-click class="rounded-xl shadow max-w-full p-8 bg-gray-100 text-center">
+  <div class="text-4xl mb-2">🎬</div>
+  <div class="text-sm opacity-60">Video placeholder</div>
+  <div class="text-xs opacity-40 mt-1">Add sample-demo.mp4 to public/ folder</div>
+</div>
 
 ---
 layout: center
