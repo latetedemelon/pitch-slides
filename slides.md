@@ -41,26 +41,35 @@ class: text-center
 
 # The Problem
 
-<div class="grid grid-cols-1 gap-6">
+<div class="grid grid-cols-2 gap-8 text-left">
 
-<div class="p-6 rounded-2xl border shadow-lg bg-white inline-block">
-  <div class="font-bold text-lg mb-3">Hidden Inconsistent Process:</div>
-  <div class="space-y-2">
-<div> **Difficult to track status** </div>
-<div> - Scattered across tools </div>
-<div> **Low visibility & late alignment** </div>
-<div>   - Ideas surface too late </div>
-<div> **No consistent prioritization** </div>
-<div>   - Every idea competes equally </div>
-<div> **No shared roadmap** </div>
-<div>   - Can't see the funnel </div>
+<div class="p-5 rounded-2xl border shadow-lg bg-white">
+  <div class="font-bold text-lg mb-4 text-red-700">⚠️ Current Pain Points</div>
+  <div class="space-y-3">
+    <div class="flex items-start gap-2">
+      <span class="text-red-500">✗</span>
+      <div><strong>Difficult to track status</strong><br/><span class="text-sm opacity-70">Scattered across tools</span></div>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-red-500">✗</span>
+      <div><strong>Low visibility & late alignment</strong><br/><span class="text-sm opacity-70">Ideas surface too late</span></div>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-red-500">✗</span>
+      <div><strong>No consistent prioritization</strong><br/><span class="text-sm opacity-70">Every idea competes equally</span></div>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-red-500">✗</span>
+      <div><strong>No shared roadmap</strong><br/><span class="text-sm opacity-70">Can't see the funnel</span></div>
+    </div>
   </div>
-
-
-<div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
-  <strong>Problem Statement:</strong> Fragmented tools and processes make it hard to track investment status, compare options, and make timely decisions.
 </div>
+
+<div class="p-5 rounded-2xl border shadow-lg bg-gradient-to-br from-blue-50 to-emerald-50 flex flex-col justify-center">
+  <div class="font-bold text-lg mb-3 text-sky-800">💡 Problem Statement</div>
+  <p class="text-base leading-relaxed">Fragmented tools and processes make it hard to track investment status, compare options, and make timely decisions.</p>
 </div>
+
 </div>
 
 
@@ -197,26 +206,25 @@ class: text-center
 
 <div class="grid grid-cols-2 gap-4">
 
-<div class="p-4 rounded-xl border text-center shadow bg-blue-50">
+<div class="p-4 rounded-xl border text-left shadow bg-blue-50">
 
 ## Integrated digital workflow
 
-
-  - 📋 Standard templates & mandatory fields
-  - 🔒 Role-based access & audit trail
-  - 📊 Portfolio dashboards & exports
+- 📋 Standard templates & mandatory fields
+- 🔒 Role-based access & audit trail
+- 📊 Portfolio dashboards & exports
 
 </div>
 
-<div class="p-4 rounded-xl border text-center shadow bg-emerald-50">
+<div class="p-4 rounded-xl border text-left shadow bg-emerald-50">
   
 ## Strategic Alignment
 
-  - **Innovate** → Unlocks external delivery
-  - **Execute capital plan** → Governance foundation
-  - **Accelerate work** → Smarter working
-  - **F26 Action 11** → Grid modernization
-  - **Tech Objective 6** → Data-driven platform
+- **Innovate** → Unlocks external delivery
+- **Execute capital plan** → Governance foundation
+- **Accelerate work** → Smarter working
+- **F26 Action 11** → Grid modernization
+- **Tech Objective 6** → Data-driven platform
 
 </div>
 
@@ -582,11 +590,6 @@ Speaking notes:
 - You can pause briefly here, invite initial reactions, or signal the transition into either deeper technical content or (for this deck) the Slidev/demo section.
 -->
 
-
----
-
-
-
 ---
 layout: center
 class: sea-break
@@ -747,60 +750,36 @@ Speaking notes:
 -->
 
 
-
 ---
 
 # Controls & Auditability
 
 <div class="grid grid-cols-2 gap-6">
 
-<div>
+<div class="p-4 rounded-xl border shadow bg-slate-50">
 
-### Control Matrix
+### 🛡️ Control Matrix
 
-**SoD rules by stage**
-  - Clear separation of duties
-  
-**Approver role mapping**
-  - RACI-based authorization
-  
-**Required-field validation**
-  - Completeness gates
-  
-**Change history**
-  - Full audit trail
-
-
+- **SoD rules by stage** – Clear separation of duties
+- **Approver role mapping** – RACI-based authorization
+- **Required-field validation** – Completeness gates
+- **Change history** – Full audit trail
 
 </div>
 
-<div>
+<div class="p-4 rounded-xl border shadow bg-slate-50">
 
-### Automated Checks
+### ⚙️ Automated Checks
 
-
-
-**Completeness validation**
-  - Pre-submission checks
-  
-**Duplicate detection**
-  - Prevent redundancy
-  
-**SLA timers**
-  - Escalation triggers
-  
-**Late-approval alerts**
-  - Accountability notifications
-
-
-
-
+- **Completeness validation** – Pre-submission checks
+- **Duplicate detection** – Prevent redundancy
+- **SLA timers** – Escalation triggers
+- **Late-approval alerts** – Accountability notifications
 
 </div>
 
 </div>
 
-<!--
 Speaking notes:
 - Make it clear that controls are designed in from the start, not added later.
 - On the left, explain the control matrix: SoD rules per stage, who is allowed to approve what, and how required fields act as gates.
@@ -1205,46 +1184,27 @@ Speaking notes:
 
 <div class="grid grid-cols-2 gap-6">
 
-<div>
+<div class="p-4 rounded-xl border shadow bg-white">
 
-- **Executive View**
-  - Portfolio health at a glance
-  - Investment pipeline by quarter
-  - Top risks & dependencies
-  
-- **Planning View**
-  - Ideas by status
-  - IJ/BC aging analysis
-  - Resource allocation
-  
-- **Approval View**
-  - Items awaiting decision
-  - SLA compliance
-  - Bottleneck identification
+### 📊 Dashboard Views
+
+- **Executive View** – Portfolio health, investment pipeline, top risks
+- **Planning View** – Ideas by status, IJ/BC aging, resource allocation
+- **Approval View** – Items awaiting decision, SLA compliance, bottlenecks
 
 </div>
 
-<div>
+<div class="p-4 rounded-xl border shadow bg-white">
 
+### 📈 Key Metrics
 
-- **Cycle time trends**
-  - Idea → IJ → BC progression
-  
-- **Decision velocity**
-  - Approvals per period
-  - Gate timer compliance
-  
-- **Data quality indicators**
-  - Completeness scores
-  - Resubmission rates
+- **Cycle time trends** – Idea → IJ → BC progression
+- **Decision velocity** – Approvals per period, gate compliance
+- **Data quality** – Completeness scores, resubmission rates
 
-
-
-<div v-click class="mt-3 p-3 rounded-lg bg-emerald-50 border-l-4 border-emerald-600">
-  <div class="font-bold text-emerald-900 mb-1">Export Capability</div>
-  <div class="text-xs opacity-90">
-    All dashboards support CSV/Excel export for offline analysis and integration with existing reporting processes.
-  </div>
+<div v-click class="mt-4 p-3 rounded-lg bg-emerald-50 border-l-4 border-emerald-600">
+  <div class="font-bold text-emerald-900 mb-1">📤 Export Capability</div>
+  <div class="text-xs opacity-90">All dashboards support CSV/Excel export for offline analysis and integration.</div>
 </div>
 
 </div>
