@@ -27,18 +27,21 @@ info: |
 
 <!--
 Speaking notes:
-Introduce the team and context.
+- Welcome everyone and briefly set the context: this is our DSL Capstone project for BC Hydro’s Technology organization.
+- Introduce the name: P.I.T.C.H. – Portfolio Investment Tracker & Control Hub – a digital workflow for ideas, Investment Justifications (IJs), and Business Cases.
+- Quickly introduce the team by name and role/angle (e.g., “we’ve brought perspectives from planning, architecture, product, and delivery”).
+- Outline what we’ll cover: the current problem, our proposed solution, how it aligns to BC Hydro strategy, the pilot approach, and what we’re asking from leadership.
 -->
 
 ---
+layout: center
+class: text-left
+transition: slide-up
+---
 
-# Problem & Opportunity
+# The Problem
 
-<div>
-
-## Current Problems
-
-<v-clicks>
+<div class="text-xl mb-4">
 
 - **Difficult to track status**
   - Scattered across tools
@@ -47,45 +50,72 @@ Introduce the team and context.
   - Ideas surface too late
   
 - **No consistent prioritization**
-  - Everything competes equally
+  - Everything idea competes equally
   
 - **No shared roadmap**
   - Can't see the funnel
 
-</v-clicks>
-
 </div>
-
 
 <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
-  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
+  <strong>Problem Statement:</strong> 
+  
+    - This is the problem statment
 </div>
+
+<!--
+Speaking notes:
+- Describe the current state briefly: status is spread across email, SharePoint, spreadsheets, and people’s heads.
+- Explain that this fragmentation makes it hard to see where any given IJ or Business Case is, and when decisions will happen.
+- Call out the upstream issue: ideas arrive late and inconsistently, so prioritization becomes reactive and everything feels “urgent.”
+- Emphasize that without a shared roadmap or funnel, it’s very hard to compare options or have portfolio-level conversations.
+- Land on the Vision statement: we’re not trying to bypass controls; we’re trying to accelerate decisions while preserving safety, governance, and affordability.
+-->
 
 ---
+layout: center
+transition: fade
+class: text-center
+---
 
-# Opportunity
+# The Opportunity
 
-<div>
+<Transform :scale="0.8" origin="center">
+  <div class="border rounded-2xl p-6 inline-block shadow-lg bg-white">
 
-## The Opportunity
+  <p class="text-sm opacity-80">
+      <code>&lt;Transform&gt;</code> 
+      **Intgptoegrated, auditable workflow:**
 
-<v-clicks>
+      - ✓ Standardized data capture
+      - ✓ End-to-end visibility
+      - ✓ Automated approvals
+      - ✓ Portfolio dashboards
+      
+  </p>
 
-**Integrated, auditable workflow:**
-
-- ✓ Standardized data capture
-- ✓ End-to-end visibility
-- ✓ Automated approvals
-- ✓ Portfolio dashboards
-
-</v-clicks>
-
-</div>
+  </div>
+</Transform>
 
 
-<div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
-  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
-</div>
+  <p class="mt-6 text-sm opacity-80">
+    
+  <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
+      <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
+  </div>
+
+  </p>
+
+<!--
+Speaking notes:
+- Pivot from pain points to opportunity: what if we had one integrated workflow instead of many disconnected tools?
+- Walk through the bullets as capabilities:
+  - Standardized data capture so every IJ/BC has the same core information, which makes comparison and reporting much easier.
+  - End-to-end visibility so sponsors and leadership can see where items are in the funnel at any time.
+  - Automated approvals to reduce manual chasing while preserving the existing control structure.
+  - Portfolio dashboards to support portfolio-level trade-off discussions instead of one-off approvals.
+- Tie back to the same Vision to reinforce continuity: faster, clearer decisions with strong controls.
+-->
 
 ---
 
@@ -97,18 +127,18 @@ Introduce the team and context.
 
 ## Who we listened to
 
-<v-clicks>
+
 
 - Capital Planning & Finance
 - IT Planners & BSS Advisors
 - Portfolio / Program Owners
 - PMO / Project Managers
 
-</v-clicks>
+
 
 ## What we heard
 
-<v-clicks>
+
 
 <div class="bch-quote text-sm">
 "Hours reconciling <strong>spreadsheet versions</strong>"
@@ -122,7 +152,7 @@ Introduce the team and context.
 "Hard to compare <strong>like-for-like</strong>"
 </div>
 
-</v-clicks>
+
 
 </div>
 
@@ -130,7 +160,7 @@ Introduce the team and context.
 
 ## How this shaped P.I.T.C.H.
 
-<v-clicks>
+
 
 - **Finance stays system of record**
   - P.I.T.C.H. handles intake/workflow
@@ -144,39 +174,47 @@ Introduce the team and context.
 - **Guided submissions**
   - Validation & help text
 
-</v-clicks>
+
 
 </div>
 
 </div>
+
+<!--
+Speaking notes:
+- Emphasize that we started with listening, not tools: we interviewed Capital Planning, IT planners, business leaders, and project managers.
+- Highlight the themes behind the quotes: lots of manual spreadsheet reconciliation, no single view of “where my IJ is,” and difficulty comparing options like-for-like.
+- Explain how those insights shaped design choices:
+  - Finance remains the system of record for financials; P.I.T.C.H. is a system of engagement and workflow.
+  - We will pilot with 1–2 portfolios first to prove value and refine before scaling.
+  - We introduce standard templates and a canonical data model so dashboards are meaningful and consistent.
+  - Guided submissions with validation and hints reduce rework and help authors submit “right the first time.”
+-->
 
 ---
+layout: center
+transition: fade
+class: text-center
+---
 
-# Proposed Digital Solution & Strategic Alignment
+# Proposed  Solution & Strategic Alignment
 
-<div class="grid grid-cols-2 gap-6">
+<div class="grid grid-cols-2 gap-4">
 
-<div>
+<div class="p-4 rounded-xl border text-center shadow bg-blue-50">
 
-## Proposed Solution
+## Integrated digital workflow
 
-<v-clicks>
-
-**Integrated digital IJ/BC workflow** with:
 
 - 📋 Standard templates & mandatory fields
 - 🔒 Role-based access & audit trail
 - 📊 Portfolio dashboards & exports
 
-</v-clicks>
-
 </div>
 
-<div>
-
+<div class="p-4 rounded-xl border text-center shadow bg-emerald-50">
+  
 ## Strategic Alignment
-
-<v-clicks>
 
 - **Innovate** → Unlocks external delivery
 - **Execute capital plan** → Governance foundation
@@ -184,11 +222,25 @@ Introduce the team and context.
 - **F26 Action 11** → Grid modernization
 - **Tech Objective 6** → Data-driven platform
 
-</v-clicks>
-
 </div>
 
 </div>
+
+
+
+<!--
+Speaking notes:
+- Summarize the solution in one line: an integrated digital workflow for IJs and Business Cases.
+- Briefly expand each feature:
+  - Standard templates and mandatory fields to ensure quality and comparability.
+  - Role-based access, approvals, and an immutable audit trail to satisfy control and audit needs.
+  - Dashboards and export capabilities to feed existing processes like AIPS and PMO reporting.
+- Then walk through the alignment bullets:
+  - It supports “Innovate to meet customer needs” by making internal investment decisions faster.
+  - It helps execute the capital plan with a clearer governance and decision foundation.
+  - It aligns with “Accelerating our work” by reducing friction in the approval pipeline.
+  - It contributes to F26 Action 11 and Technology Objective 6 by standing up a modern, data-driven platform.
+-->
 
 ---
 
@@ -201,23 +253,23 @@ Introduce the team and context.
 
 ### Business Drivers / Objectives
 
-<v-clicks>
+
 
 - Faster, better decisions on technology investments
 - Trustworthy, auditable data for regulatory/compliance needs
 - Clear portfolio visibility and trade-offs
 
-</v-clicks>
+
 
 ### Benefits (Measures)
 
-<v-clicks>
+
 
 - ↓ Time from **Idea → IJ** and **IJ → Approved Business Case**
 - ↓ Resubmission rate due to incomplete/incorrect submissions
 - ↑ On-time approvals within agreed SLAs
 
-</v-clicks>
+
 
 
 
@@ -227,57 +279,67 @@ Introduce the team and context.
 
 ### Business Changes (Enduring)
 
-<v-clicks>
+
 
 - Retire spreadsheets as primary tracking tools
 - Use portfolio dashboards in **regular decision forums** (e.g., committees, QBRs)
 
-</v-clicks>
+
 
 ### Enabling Changes (Prerequisites)
 
-<v-clicks>
+
 
 - Select and configure the workflow platform
 - Develop templates, training material, and change playbooks
 - Set up dashboards and reporting views
 
-</v-clicks>
+
 
 ### IS/IT Enablers
 
-<v-clicks>
+
 
 - Integrated workflow platform capturing required data and states
 - Role-based access control and immutable audit trail
 - Analytics and portfolio dashboards
 - Export/mapping package for AIPS / PMO systems
 
-</v-clicks>
+
 
 </div>
 
 </div>
 
+<!--
+Speaking notes:
+- Position this as our “why now” slide: why this project is worth doing.
+- Start with the business drivers: better, faster investment decisions; trustworthy data; and real portfolio visibility.
+- Connect the benefits to measurable improvements: shorter lead times, fewer resubmissions, more approvals within target SLAs.
+- Call out the enduring business changes: over time, we retire spreadsheets as the primary tracking mechanism and use dashboards in standing decision forums.
+- Explain the prerequisites: we need the right platform, good templates, training, and reporting views.
+- Finally, highlight the IS/IT enablers: integrated workflow, RBAC and audit trail, dashboards, and exports that plug into AIPS and PMO processes.
+-->
+
+---
+layout: center
+class: text-center
+transition: fade
 ---
 
 # Success Criteria
 
-<div class="grid grid-cols-2 gap-6">
+<ul class="list-disc text-left inline-block">
+  
 
-<div>
+  <li>**Idea → IJ lead time (days)** – target ↓ 40–50%
+  <li>**IJ → Submitted BC (days)** – target ↓ 30–40%
+  <li>**Status latency (days)** </li>
+  <li>**Portfolio freshness (%)** </li>
+  <li>**Resubmission rate ↓ 50%** </li>
+  <li>**Median user effort ↓ 30–40%** </li>
 
-- **Idea → IJ lead time (days)** – target ↓ 40–50%
-- **IJ → Submitted BC (days)** – target ↓ 30–40%
-- **Status latency (days)**
-- **Portfolio freshness (%)**
-- **Resubmission rate ↓ 50%**
-- **Median user effort ↓ 30–40%**
-
-
-</div>
-
-<div>
+</ul>
 
 <div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-sky-500">
   <p class="text-sm">
@@ -285,14 +347,19 @@ Introduce the team and context.
   </p>
 </div>
 
-</div>
-
-</div>
-
+<!--
+Speaking notes:
+- Explain that these are the core KPIs we’ll use to judge the pilot.
+- Clarify each briefly:
+  - Lead time from Idea to IJ and IJ to submitted Business Case.
+  - Status latency: how long information in the system lags reality.
+  - Portfolio freshness: how many items have current, up-to-date data.
+  - Resubmission rate: how often things come back due to missing or incorrect info.
+  - Median user effort as a proxy for “how painful is this” for authors and advisors.
+- Emphasize the 80% rule: we’re not expecting perfection, but if we hit roughly 80% of these targets in the pilot, that’s a strong signal to scale.
+-->
 
 ---
-
-
 
 # Change Impact Assessment
 
@@ -302,30 +369,30 @@ Introduce the team and context.
 
 ### **Overall impact:**
 
-<v-clicks>
+
 
 - *Moderate* – significant change to **how** we manage IJs/BCs, with mitigations to protect Finance and control processes.
 
-</v-clicks>
+
 
 ### Process
 
-<v-clicks>
+
 
 - Move from  email + documents to a **standardized, state-driven workflow**
 - Impacted: IT Planners, BSS IT Advisors, Capital Planning, Portfolio Owners, PMO
 
-</v-clicks>
+
 
 ### Roles & Responsibilities
 
-<v-clicks>
+
 
 - Clear RACI for sponsors, approvers, reviewers
 - Formalized ownership of data and decisions
 - Impacted: sponsors, approvers, committees
 
-</v-clicks>
+
 
 </div>
 
@@ -333,35 +400,49 @@ Introduce the team and context.
 
 ### Tools & Data
 
-<v-clicks>
+
 
 - New system of engagement (P.I.T.C.H.) becomes the **single place to look** 
 - Impacted: users currently managing ideas and writing IJs
 
-</v-clicks>
+
 
 ### Culture & Ways of Working
 
-<v-clicks>
+
 
 - Shift to **transparent, data-driven, standardized** processes
 - Impacted: all stakeholders involved in planning and decision-making
 
-</v-clicks>
+
 
 ### Mitigations
 
-<v-clicks>
+
 
 - Co-designed workflow with key users
 - Dual-running during pilot with current process
 - Export functions for spreadsheet creation
 
-</v-clicks>
+
 
 </div>
 
 </div>
+
+<!--
+Speaking notes:
+- Set expectations: this is a moderate change, especially in how people work, but it’s designed to be low-risk for Finance and governance.
+- Walk through the impact areas:
+  - Process: moving from ad-hoc email + docs to a state-based, trackable workflow across common stakeholders.
+  - Roles: clearer RACI and ownership around who submits, who reviews, who approves.
+  - Tools & data: P.I.T.C.H. becomes the single place to check status and progress.
+  - Culture: we’re pushing toward transparency, consistency, and data-driven decisions.
+- Reassure people with mitigations:
+  - Co-design with key users, not “done to” them.
+  - Dual-run the pilot alongside current processes to de-risk adoption.
+  - Ability to export to spreadsheets for people who still need them in the short term.
+-->
 
 ---
 
@@ -401,6 +482,17 @@ Introduce the team and context.
 
 </div>
 
+<!--
+Speaking notes:
+- Lay out the concrete next steps: choose 1–2 pilot portfolios, configure the platform, and run for a full planning cycle.
+- Emphasize that we will measure before and after using the KPIs you just saw, and use feedback to refine the solution.
+- Explain the decision gate: after the pilot, we can choose to iterate, scale, or stop based on evidence.
+- Clearly articulate the leadership asks:
+  - Sponsorship and visible support.
+  - A clear mandate that the pilot portfolios use P.I.T.C.H. as the main path for IJs/BCs during the pilot.
+  - Modest part-time resourcing for configuration and SME support.
+-->
+
 ---
 
 
@@ -412,27 +504,27 @@ Introduce the team and context.
 
 ### 🎯 Problem
 
-<v-clicks>
+
 
 - Fragmented investment process → hard to track status, compare options, make timely decisions
 
-</v-clicks>
+
 
 ### 💡 Our Proposal
 
-<v-clicks>
+
 
 - **P.I.T.C.H.**: Standardized workflow & data model for Ideas → IJs → Business Cases
 
-</v-clicks>
+
 
 ### 🚀 How We'll Do It
 
-<v-clicks>
+
 
 - Pilot → Measure → Refine → Scale
 
-</v-clicks>
+
 
 </div>
 
@@ -440,25 +532,25 @@ Introduce the team and context.
 
 ### ⭐ Why It Matters
 
-<v-clicks>
+
 
 - Accelerates work (↓ cycle times)
 - Improves decisions (data visibility)
 - Strengthens controls (SoD, audit)
 - Aligns with F26 priorities
 
-</v-clicks>
+
 
 ### 🤝 What We Need
 
-<v-clicks>
+
 
 - Executive sponsorship
 - Pilot mandate
 - Success criteria & gates
 - Configuration capacity
 
-</v-clicks>
+
 
 </div>
 
@@ -466,7 +558,12 @@ Introduce the team and context.
 
 <!--
 Speaking notes:
-Use this slide to set the frame quickly.
+- Use this slide either as an opener or a recap; here it works well as a concise recap before Q&A.
+- Restate the core problem in one sentence: fragmentation makes it hard to track and decide.
+- Restate the proposal: P.I.T.C.H. gives us a standardized, end-to-end workflow and data model.
+- Reiterate the implementation approach: start with a pilot, measure impact, refine, then scale.
+- Summarize why it matters: faster cycle times, better decisions, stronger controls, and alignment with F26.
+- End with the specific asks: sponsorship, mandate, agreement on success criteria, and a small amount of configuration capacity.
 -->
 
 ---
@@ -478,6 +575,13 @@ class: sea-break
   <h1 class="text-6xl font-bold mb-4 !text-white !border-white">P.I.T.C.H.</h1>
   <p class="text-2xl opacity-90">Building the Foundation for Decision Excellence</p>
 </div>
+
+<!--
+Speaking notes:
+- Use this as a short pause/transition slide.
+- Re-emphasize the tagline: P.I.T.C.H. is about building a foundation for better, faster, more transparent decisions.
+- You can pause briefly here, invite initial reactions, or signal the transition into either deeper technical content or (for this deck) the Slidev/demo section.
+-->
 
 ---
 
@@ -521,517 +625,755 @@ class: sea-break
 
 </div>
 
----
-layout: cover
----
+<!--
+Speaking notes:
+- Frame this as the delivery roadmap: how we get from idea to a governed, scaled solution.
+- Briefly expand each step:
+  - Discover: understand the real process, pain points, and existing controls; baseline timings.
+  - Define: design the target workflow, data model, approval matrix, and clear definitions of Ready/Done.
+  - Pilot: configure an MVP for 1–2 portfolios with well-defined success criteria.
+  - Evaluate: use both quantitative KPIs and qualitative feedback to assess impact.
+  - Scale: extend to more portfolios with proper change management, training, and guardrails.
+  - Govern: sustain the solution with a control matrix, automated checks, and ongoing KPI monitoring.
+-->
 
 
-# Fancy Slidev Demo
-
-- All-in-one showcase of:
-  - Transitions
-  - Click-to-reveal
-  - Magic code moves
-  - View transitions
-  - Layouts & Tailwind styling
-  - RoughNotation highlights
-  - Interactive components (`Transform`, `VSwitch`, `v-drag`, `v-drag-arrow`)
-  - Video & YouTube embeds
-
-
-
-> Use the arrow keys ← → or click to step through animations.
-
-
-
----
-layout: cover
-class: text-white
-background: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg
-transition: fade
----
-
-# Transitions & Layouts
-
-<div class="text-xl mt-4">
-This slide uses:
-</div>
-
-<v-clicks>
-
-- `layout: cover`
-- `background: <image-url>`
-- `transition: fade` (overrides default)
-- Text styled with utility classes
-
-</v-clicks>
 
 ---
 layout: center
-class: text-center
-transition: slide-up
+class: sea-break
 ---
 
-# Click-to-Reveal Basics
-
-<v-clicks>
-
-<div class="text-xl mb-4">
-Each line appears on click.
+<div class="text-center text-white">
+  <h1 class="text-6xl font-bold mb-4 !text-white !border-white">THE PLAN</h1>
+  <p class="text-2xl opacity-90">Implementation Strategy & Technical Details</p>
 </div>
 
-<div>1. Using the <code>&lt;v-click&gt;</code> directive</div>
-<div>2. Or the <code>&lt;v-clicks&gt;</code> wrapper</div>
-<div>3. Great for pacing your story</div>
-
-</v-clicks>
+<!--
+Speaking notes:
+- Signal that we’re shifting from “why” and “what” into “how we’ll execute.”
+- Position this section as the implementation view: dependencies, risks, metrics, and technical/operational details.
+- Let the audience know you’ll keep it high-level but concrete enough to show feasibility.
+-->
 
 ---
-layout: two-cols
-transition: slide-right | slide-left
+
+# Benefits Dependency Network (Tightened)
+
+<div class="text-sm">
+
+<div class="grid grid-cols-1 gap-3">
+
+<div class="p-3 rounded-lg border-l-4 border-sky-600 bg-sky-50">
+  <div class="font-bold text-sky-900 mb-1">Business Drivers / Objectives</div>
+  <div class="opacity-90">Faster decisions • Trustworthy, auditable data • Portfolio visibility</div>
+</div>
+
+<div class="p-3 rounded-lg border-l-4 border-emerald-600 bg-emerald-50">
+  <div class="font-bold text-emerald-900 mb-1">Benefits (Measures)</div>
+  <div class="opacity-90">↓ Lead time • ↓ Resubmissions • ↑ Data completeness • ↑ On-time approvals • ↑ Portfolio freshness</div>
+</div>
+
+<div class="p-3 rounded-lg border-l-4 border-violet-600 bg-violet-50">
+  <div class="font-bold text-violet-900 mb-1">Enduring Business Changes</div>
+  <div class="opacity-90">Retire spreadsheets • Adopt standard templates • Automated approvals • Dashboard use in QBRs</div>
+</div>
+
+<div class="p-3 rounded-lg border-l-4 border-amber-600 bg-amber-50">
+  <div class="font-bold text-amber-900 mb-1">Enabling Changes</div>
+  <div class="opacity-90">Platform selection & config • Training & templates • Dashboard setup • Data migration</div>
+</div>
+
+<div class="p-3 rounded-lg border-l-4 border-slate-600 bg-slate-50">
+  <div class="font-bold text-slate-900 mb-1">IS/IT Enablers</div>
+  <div class="opacity-90">Integrated workflow (JPD→Jira/Confluence) • RBAC + immutable audit trail • Analytics dashboards • AIPS export</div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Explain that this is the tightened benefits dependency network: how drivers, benefits, changes, and enablers line up.
+- Start at the top: the core business objectives are faster decisions, trustworthy data, and real portfolio visibility.
+- Connect these to measurable benefits: improved lead times, fewer resubmissions, better data quality, and fresher portfolio views.
+- Show how those benefits depend on enduring changes in how we work (templates, dashboards, automation).
+- Close by linking to the IS/IT enablers: if we invest in the workflow platform, RBAC/audit, and AIPS exports, we unlock the rest of the chain.
+-->
+
 ---
 
-# `v-click` vs `v-after`
+# Key Performance Indicators
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-6">
 
-- `v-click` → show on a specific click
-- `v-after` → show and stay visible after a certain click
-- Combine them for progressive reveals
+<div>
 
-</v-clicks>
+### Outcome / Decision KPIs
 
-::right::
+
+
+- **Idea → IJ lead time** ✓
+- **IJ → Approved BC lead time** ✓
+- **% Approvals within SLA** ✓
+- **Decision latency per gate** ✓
+
+
+
+### Quality / Control KPIs
+
+
+- **Resubmission rate** ↓ 50%
+
+</div>
+
+<div>
+
+### Adoption / Change KPIs
+
+- **Active planners/week** ✓
+- **Template adherence** ✓
+- **Median user effort** ↓ 
+
+
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Position this as the detailed KPI set that underpins the pilot success criteria.
+- Walk left column first:
+  - Outcome KPIs capture how fast and how reliably decisions are being made.
+  - Quality/control KPIs ensure we’re not trading speed for governance.
+- Then the right column:
+  - Adoption/change KPIs tell us whether people are actually using the tool and finding it usable.
+  - Platform/dataflow KPIs ensure the underlying system is stable and trustworthy.
+- Emphasize that these KPIs give a balanced view across business, controls, adoption, and technology.
+-->
+
+
+
+---
+
+# Controls & Auditability
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Control Matrix
+
+
+
+- **SoD rules by stage**
+  - Clear separation of duties
+  
+- **Approver role mapping**
+  - RACI-based authorization
+  
+- **Required-field validation**
+  - Completeness gates
+  
+- **Change history**
+  - Full audit trail
+
+
+
+</div>
+
+<div>
+
+### Automated Checks
+
+
+
+- **Completeness validation**
+  - Pre-submission checks
+  
+- **Duplicate detection**
+  - Prevent redundancy
+  
+- **SLA timers**
+  - Escalation triggers
+  
+- **Late-approval alerts**
+  - Accountability notifications
+
+
+
+### Audit Artifacts
+
+
+
+- Immutable event log
+- Approver identity & timestamp
+- Field-level diff tracking
+- Exportable evidence pack
+
+
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Make it clear that controls are designed in from the start, not added later.
+- On the left, explain the control matrix: SoD rules per stage, who is allowed to approve what, and how required fields act as gates.
+- On the right, show how automated checks support that control matrix: completeness, duplicates, SLA timers, and late-approval alerts.
+- Close with the audit artifacts: we can give auditors a complete, exportable trail of who did what, when, and to which fields.
+-->
+
+---
+
+# Data Model & AIPS Alignment
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Canonical Fields
+
+
+
+- Request ID
+- Title / Summary
+- Scope description
+- Cost by month
+- Risk score
+- Benefits statement
+- Status
+- Owner
+- Key timestamps
+
+
+
+</div>
+
+<div>
+
+### Integration Roadmap
 
 <div class="space-y-3">
 
-<div v-click>
-  <span class="font-bold">Step 1:</span> Introduce the problem
+<div v-click class="p-3 rounded-lg border-l-4 border-emerald-600 bg-emerald-50">
+  <div class="font-bold text-emerald-900">Now (v1.0)</div>
+  <div class="text-sm opacity-90">Clean canonical dataset with CSV export • Field mapping doc • Validation checks</div>
 </div>
 
-<div v-after>
-  <span class="font-bold text-emerald-600">Step 2:</span> Show the solution
+<div v-click class="p-3 rounded-lg border-l-4 border-sky-600 bg-sky-50">
+  <div class="font-bold text-sky-900">Next (v1.5)</div>
+  <div class="text-sm opacity-90">Export package • Schema validation • Error reporting</div>
 </div>
 
-<div v-after>
-  <span class="font-bold text-sky-700">Step 3:</span> Add supporting details
+<div v-click class="p-3 rounded-lg border-l-4 border-violet-600 bg-violet-50">
+  <div class="font-bold text-violet-900">Later (v2.0)</div>
+  <div class="text-sm opacity-90">Optional bi-directional sync if system becomes downstream SoR</div>
 </div>
 
 </div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Explain that we’ve defined a canonical data model that covers what Capital Planning and AIPS actually need.
+- Walk through a few key fields (ID, cost by quarter, risk, benefits, timestamps) as the backbone for reporting.
+- On the right, describe the integration roadmap:
+  - v1.0 focuses on a clean exportable dataset and strong validation.
+  - v1.5 adds a formal AIPS export package and schema validation.
+  - v2.0 leaves room for optional bi-directional sync if AIPS becomes the downstream system of record.
+-->
+
+---
+
+# Adoption & Change Enablement
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### 30-Day Enablement Plan
+
+
+
+- **Week 1:** Kickoff & playbook distribution
+  
+- **Week 2-3:** Guided submissions
+
+- **Week 4:** Self-service milestone
+
+### Success Measures
+
+
+
+- Active planners per week
+- Template adherence rate
+- Time to first submission
+- Help desk ticket volume
+
+
+
+</div>
+
+<div>
+
+### Review Cadence
+
+
+
+- **Monthly:** Process review
+  - Workflow bottlenecks
+  - User feedback
+  
+- **Quarterly:** KPI & control health check
+  - Performance against targets
+  - Control effectiveness review
+  - Continuous improvement priorities
+
+
+
+<div v-click class="mt-4 p-4 rounded-lg bg-amber-50 border-l-4 border-amber-600">
+  <div class="font-bold text-amber-900 mb-1">Change Principle</div>
+  <div class="text-sm opacity-90">
+    Pilot groups will have dual-running support during the first cycle, with gradual transition to P.I.T.C.H. as primary path.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Emphasize that we have a structured enablement plan, not just a tool rollout.
+- Walk through Weeks 1–4: kickoff, guided support, then moving to self-service with a clear adoption target.
+- Highlight the simple success measures for change: how many people are using it, how well they follow templates, and what support load looks like.
+- On the right, describe the governance cadence so this doesn’t become “set and forget.”
+- Reinforce the change principle: dual-running at the start to reduce risk, but a clear path to P.I.T.C.H. becoming the primary route.
+-->
+
+---
+
+# Non-Functional Requirements
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Availability & Reliability
+
+
+
+- **Availability:** ≥ 99.9% during business hours
+- **RTO (Recovery Time):** ≤ 4 hours
+- **RPO (Recovery Point):** ≤ 1 hour
+
+
+
+### Performance
+
+
+
+- **Page interaction:** < 2 seconds median
+  - Common actions (view, edit, submit)
+  
+- **Export jobs:** < 5 minutes
+  - For up to 500 records
+  
+- **Dashboard refresh:** < 10 seconds
+  - Portfolio-level views
+
+
+
+</div>
+
+<div>
+
+### Security & Compliance
+
+
+
+- **Access control:** Role-based (RBAC)
+  - Least privilege principle
+  
+- **Audit trail:** Immutable event log
+  - All actions tracked
+  
+- **Privacy alignment:**
+  - FIPPA compliance
+  - CASL requirements
+  
+- **Data protection:**
+  - Encryption at rest
+  - Encryption in transit
+
+
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Clarify that we’ve defined non-functional expectations so the pilot feels production-grade where it matters.
+- On the left, outline availability and performance: this has to be responsive enough that it doesn’t become a bottleneck.
+- On the right, reinforce security and compliance: RBAC, audit logs, FIPPA/CASL alignment, and encryption are all explicit requirements.
+- Tie this back to trust: if planners and Finance trust the platform, adoption will follow.
+-->
+
+---
+
+# Dependencies & Risks
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Key Dependencies
+
+
+
+- **Platform admin/config capacity**
+  - 0.3 FTE for pilot period
+  
+- **Steering committee buy-in**
+  - Mandate for pilot portfolios
+  
+- **Pilot group availability**
+  - Dedicated time for testing
+  
+- **Data access for baseline**
+  - Historical metrics needed
+
+
+
+</div>
+
+<div>
+
+### Risks & Mitigations
+
+<div class="space-y-3">
+
+<div v-click class="p-3 rounded-lg bg-red-50 border-l-4 border-red-500">
+  <div class="font-bold text-red-900">Risk: Shadow processes persist</div>
+  <div class="text-sm opacity-90"><strong>Mitigation:</strong> Clear mandate + comprehensive training</div>
+</div>
+
+<div v-click class="p-3 rounded-lg bg-amber-50 border-l-4 border-amber-500">
+  <div class="font-bold text-amber-900">Risk: Inconsistent data ownership</div>
+  <div class="text-sm opacity-90"><strong>Mitigation:</strong> RACI matrix + mandatory ownership fields</div>
+</div>
+
+<div v-click class="p-3 rounded-lg bg-yellow-50 border-l-4 border-yellow-500">
+  <div class="font-bold text-yellow-900">Risk: Scope creep</div>
+  <div class="text-sm opacity-90"><strong>Mitigation:</strong> Stage-gate control + pilot boundary enforcement</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Call out that these dependencies are mostly about people and time, not big new systems.
+- Stress the need for a bit of platform admin time, a clear steering mandate, and pilot teams that can actually participate.
+- Walk through each risk and mitigation:
+  - Shadow processes: address via mandate and training.
+  - Data ownership: fix with RACI and explicit fields for owners.
+  - Scope creep: manage via stage-gates and very clear pilot boundaries.
+- Reassure the audience that these are manageable if we’re deliberate.
+-->
+
+---
+
+# Resources & Costs (Pilot View)
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Resource Requirements
+
+- **Platform Admin (0.3 FTE)**
+  - Configuration & maintenance
+  
+- **BA/Designer (0.2 FTE)**
+  - Workflow design & templates
+  
+  
+- **SMEs (as needed)**
+  - Domain expertise & validation
+
+
+
+</div>
+
+<div>
+
+### Cost Estimates
+
+
+
+- **Platform licensing**
+  - Leveraging existing tools
+  
+- **Incremental reporting tooling**
+  - Analytics & dashboard capabilities
+  
+- **Training materials**
+  - Playbooks, templates, guides
+
+
+
+### Pilot Deliverables
+
+
+
+- ✓ Configured workflow platform
+- ✓ Control matrix & audit framework
+- ✓ Portfolio dashboard
+- ✓ AIPS export package
+- ✓ Pilot report with KPI outcomes
+
+
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Emphasize that the pilot is designed to be lean: fractions of roles rather than large dedicated teams.
+- Walk through the roles and what they actually do in practice (PM, platform admin, BA/design, data/reporting, SMEs).
+- Note that we intend to leverage existing platform licensing wherever possible.
+- Close by reinforcing what leadership gets at the end of the pilot: a working platform, controls, dashboards, AIPS export, and a KPI-backed report to inform scale-up decisions.
+-->
+
+---
+
+# Risk Register – Detailed Assessment
+
+<div class="text-sm">
+
+| ID | Risk Description | Impact | Likelihood | Score | Rating |
+|----|-----------------|--------|------------|-------|--------|
+| **IT1** | **Adoption Risk** – Users revert to spreadsheets despite mandate | 4 | 4 | 16 | <span class="px-2 py-1 rounded bg-red-100 text-red-800 font-bold">Major</span> |
+| **IT2** | **Usability Risk** – Platform not fit for purpose, poor UX | 2 | 3 | 6 | <span class="px-2 py-1 rounded bg-green-100 text-green-800 font-bold">Minor</span> |
+| **IT3** | **Leadership Engagement** – Lack of executive buy-in/sponsorship | 4 | 1 | 4 | <span class="px-2 py-1 rounded bg-green-100 text-green-800 font-bold">Minor</span> |
+
+<div class="mt-4 grid grid-cols-3 gap-3">
+
+<div class="p-3 rounded-lg bg-slate-50 border">
+  <div class="font-bold text-xs mb-1">IT1 Mitigation</div>
+  <div class="text-xs opacity-80">Pilot with specific groups • Clear mandate • Early wins communication</div>
+</div>
+
+<div class="p-3 rounded-lg bg-slate-50 border">
+  <div class="font-bold text-xs mb-1">IT2 Mitigation</div>
+  <div class="text-xs opacity-80">Proper evaluation prior • User testing • Iterative refinement</div>
+</div>
+
+<div class="p-3 rounded-lg bg-slate-50 border">
+  <div class="font-bold text-xs mb-1">IT3 Mitigation</div>
+  <div class="text-xs opacity-80">Define KPIs upfront • Regular LT reviews • Success metrics visible</div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Explain that this is a snapshot of the risk register focused on three key IT-related risks.
+- Briefly walk through IT1–IT3, calling out impact, likelihood, and resulting score/rating.
+- Highlight IT1 as the major risk: if people revert to spreadsheets, we lose the benefits; this is why mandate and early wins matter.
+- For each risk, point to the mitigation card underneath and connect it to actions already built into the plan.
+- Optionally remind the audience of the severity scale: Score = Likelihood × Impact, with thresholds for Minor, Moderate, Major.
+-->
+
+---
+
+# Risk Assessment Framework
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Likelihood Rating (1-5)
+
+<div class="space-y-2 text-sm">
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>1 – Rare (&lt;20%):</strong> Highly unlikely
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>2 – Unlikely (20-40%):</strong> Not expected but possible
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>3 – Possible (40-60%):</strong> May occur
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>4 – Likely (60-80%):</strong> Expected to occur
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>5 – Very Likely (&gt;80%):</strong> Regular occurrence
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+### Impact Rating (1-5)
+
+<div class="space-y-2 text-sm">
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>1 – Minimal:</strong> Within contingency
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>2 – Modest:</strong> &lt;10% over thresholds
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>3 – Significant:</strong> 15-25% over thresholds
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>4 – Severe:</strong> &gt;25% over thresholds
+</div>
+
+<div v-click class="p-2 rounded bg-slate-50">
+  <strong>5 – Disastrous:</strong> Program cancellation
+</div>
+
+</div>
+
+### Risk Severity
+
+<div v-click class="mt-3 p-3 rounded-lg bg-blue-50 border-l-4 border-blue-600">
+  <div class="font-bold mb-1">Severity = Likelihood × Impact</div>
+  <div class="text-xs space-y-1">
+    <div><strong>Minor (&lt;10):</strong> Monitor at project level</div>
+    <div><strong>Moderate (10-14):</strong> Executive oversight</div>
+    <div><strong>Major (&gt;15):</strong> C-suite monitoring</div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Use this slide to show that the risk ratings are based on a simple, transparent framework.
+- Explain the Likelihood scale first, then the Impact scale, using one or two examples from the previous slide.
+- Show how multiplying Likelihood × Impact gives a numeric severity score.
+- Connect the severity ranges (Minor/Moderate/Major) to who should be paying attention (project team, executives, C-suite).
+-->
+
+---
+
+# Dashboards & Reporting
+
+<div class="grid grid-cols-2 gap-6">
+
+<div>
+
+### Portfolio Dashboard Views
+
+
+
+- **Executive View**
+  - Portfolio health at a glance
+  - Investment pipeline by quarter
+  - Top risks & dependencies
+  
+- **Planning View**
+  - Ideas by status
+  - IJ/BC aging analysis
+  - Resource allocation
+  
+- **Approval View**
+  - Items awaiting decision
+  - SLA compliance
+  - Bottleneck identification
+
+
+
+</div>
+
+<div>
+
+### Key Metrics Displayed
+
+
+
+- **Cycle time trends**
+  - Idea → IJ → BC progression
+  
+- **Portfolio composition**
+  - By type, cost, strategic theme
+  
+- **Decision velocity**
+  - Approvals per period
+  - Gate timer compliance
+  
+- **Data quality indicators**
+  - Completeness scores
+  - Resubmission rates
+
+
+
+<div v-click class="mt-3 p-3 rounded-lg bg-emerald-50 border-l-4 border-emerald-600">
+  <div class="font-bold text-emerald-900 mb-1">Export Capability</div>
+  <div class="text-xs opacity-90">
+    All dashboards support CSV/Excel export for offline analysis and integration with existing reporting processes.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Speaking notes:
+- Explain that dashboards are tailored to different audiences: executives, planners, and approvers.
+- On the left, walk through what each view emphasizes (health, pipeline, bottlenecks, etc.).
+- On the right, highlight the kinds of metrics they’ll see: cycle times, composition, decision velocity, and data quality.
+- Call out export capability: this isn’t a closed system; data can flow into existing reporting tools and processes.
+- If you have mockups in the real deck, reference them here as the visual reference for these concepts.
+-->
 
 ---
 layout: center
-class: text-center
-transition: fade
+class: sea-break
 ---
 
-# `v-clicks` in Lists
-
-<ul class="list-disc text-left inline-block">
-  <v-clicks>
-
-  <li>Let Slidev handle click ordering for you</li>
-  <li>Cleaner syntax than adding <code>v-click</code> to each line manually</li>
-  <li>Great for bullet lists and step-by-step flows</li>
-
-  </v-clicks>
-</ul>
-
----
-layout: two-cols
-transition: slide-left
-class: text-center
----
-
-# Tailwind / UnoCSS Formatting
-
-- Use utility classes for:
-  - Spacing (`mt-6`, `p-4`, `gap-4`)
-  - Layout (`grid`, `flex`, `items-center`)
-  - Typography (`text-3xl`, `font-bold`)
-- Makes design tweaks very fast
-
-::right::
-
-<div class="grid grid-cols-3 gap-4">
-
-<div class="p-4 rounded-xl border text-center shadow bg-blue-50">
-  Box 1
+<div class="text-center text-white">
+  <h1 class="text-5xl font-bold mb-4 !text-white !border-white">Ready to Execute</h1>
+  <p class="text-xl opacity-90">Clear plan • Defined metrics • Managed risks</p>
+  <p class="text-lg opacity-75 mt-4">Let's make this happen.</p>
 </div>
 
-<div class="p-4 rounded-xl border text-center shadow bg-emerald-50">
-  Box 2
-</div>
-
-<div class="p-4 rounded-xl border text-center shadow bg-slate-50">
-  Box 3
-</div>
-
-</div>
-
----
-layout: center
-transition: slide-down
-class: text-center
----
-
-# RoughNotation Highlights (`v-mark`)
-
-<p class="text-2xl mb-6">
-  You can <span v-mark="'underline'">underline</span>,
-  <span v-mark="'box'">box</span>, or
-  <span v-mark="'highlight'">highlight</span>
-  important text.
-</p>
-
-
-  <p class="text-sm opacity-80">
-    These animate when they appear – perfect with <code>v-click</code>.
-  </p>
-
-
----
-layout: center
-transition: fade
-class: text-center
----
-
-# Transform – Scale & Position
-
-<Transform :scale="0.8" origin="center">
-  <div class="border rounded-2xl p-6 inline-block shadow-lg bg-white">
-    <h2 class="text-2xl font-bold mb-2">
-      Scaled Down Card
-    </h2>
-    <p class="text-sm opacity-80">
-      <code>&lt;Transform&gt;</code> lets you scale, translate and rotate elements.
-    </p>
-  </div>
-</Transform>
-
-
-  <p class="mt-6 text-sm opacity-80">
-    You can animate between slides by changing the props.
-  </p>
-
-
----
-layout: two-cols
-transition: slide-left
----
-
-# VSwitch – Step Through States
-
-- Use `<VSwitch>` / `<v-switch>` to:
-  - Show different variants of the same idea
-  - Drive simple “state machines” in your story
-  - Cleanly separate content for each step
-
-::right::
-
-<VSwitch>
-  <template #1>
-    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
-      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 1</div>
-      <div class="text-3xl font-bold mb-2 text-sky-900">Idea</div>
-      <div class="text-sm opacity-80">Initial concept capture and brainstorming.</div>
-    </div>
-  </template>
-  <template #2>
-    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
-      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 2</div>
-      <div class="text-3xl font-bold mb-2 text-sky-900">Design</div>
-      <div class="text-sm opacity-80">Solution architecture and planning.</div>
-    </div>
-  </template>
-  <template #3>
-    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
-      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 3</div>
-      <div class="text-3xl font-bold mb-2 text-sky-900">Delivery</div>
-      <div class="text-sm opacity-80">Implementation and rollout.</div>
-    </div>
-  </template>
-</VSwitch>
-
----
-layout: center
-transition: slide-right
-class: text-center
----
-
-# v-drag – Interactive Bits
-
-<v-drag>
-  <div class="inline-block p-3 rounded-xl border shadow cursor-move bg-white">
-    🧩 Drag me around during the presentation
-  </div>
-</v-drag>
-
-
-  <p class="mt-6 text-sm opacity-80">
-    Use this to create interactive diagrams or playful moments.
-  </p>
-
-
----
-layout: two-cols
-transition: fade
----
-
-# Embedding Video
-
-- You can embed local videos with `<SlidevVideo>`:
-  - Supports `autoplay`, `controls`, `loop`, etc.
-  - Combine with <code>v-click</code> for timing
-- Great for demos, motion design, or product walkthroughs
-
-::right::
-
-<!-- Video placeholder - add sample-demo.mp4 to public/ folder to enable -->
-<div v-click class="rounded-xl shadow max-w-full p-8 bg-gray-100 text-center">
-  <div class="text-4xl mb-2">🎬</div>
-  <div class="text-sm opacity-60">Video placeholder</div>
-  <div class="text-xs opacity-40 mt-1">Add sample-demo.mp4 to public/ folder</div>
-</div>
-
----
-layout: center
-transition: slide-left
-class: text-center
----
-
-# Embedding YouTube
-
-<Youtube id="dQw4w9WgXcQ" class="max-w-3xl mx-auto rounded-xl shadow overflow-hidden" />
-
-
-  <p class="mt-6 text-sm opacity-80">
-    Replace <code>id</code> with your own video ID. You can also wrap in <code>v-click</code>.
-  </p>
-
-
----
-layout: center
-transition: fade
-class: text-center
----
-
-# Combining It All
-
-<v-clicks>
-
-- Use **layouts** & **Tailwind** for structure & visual polish  
-- Use **transitions** & view transitions for slide-to-slide flow  
-- Use **`v-click` / `v-clicks` / `v-after`** to pace the narrative  
-- Use **magic-move** for code evolution  
-- Use **RoughNotation**, **Transform**, **VSwitch**, and **v-drag** / **v-drag-arrow** for emphasis & interactivity  
-- Use **videos & YouTube** where motion tells the story better than static images  
-
-</v-clicks>
-
----
-layout: center
-transition: slide-up
-class: text-center
----
-
-# Your Turn 🎛️
-
-<v-clicks>
-
-- Start from this deck as a template
-- Swap the text for your own content
-- Strip out features you don’t need per deck
-- Gradually add more interactivity as you get comfortable
-
-</v-clicks>
-
----
-layout: two-cols
-class: items-start
----
-
-# Formatting & Layout
-
-<v-clicks>
-
-- **Headings with MDC:**  
-  `# Title {.text-4xl.text-sky-800}`
-- **Callouts with Tailwind classes**
-- **Two-column layouts** via `layout: two-cols`
-- **Inline code** like <code>Idea → IJ → BC</code>
-- Combine **grid**, **flex**, and **gap** for structure
-
-</v-clicks>
-
-::right::
-
-<div class="space-y-4">
-
-  <div class="p-4 rounded-xl border-l-4 border-emerald-500 bg-emerald-50">
-    <div class="font-semibold mb-1">Info Callout</div>
-    <div class="text-sm opacity-80">
-      Use Tailwind/UnoCSS utilities for quick, consistent styling.
-    </div>
-  </div>
-
-  <div class="grid grid-cols-3 gap-3">
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
-      <div class="font-bold">Idea</div>
-      <div class="opacity-70">Intake</div>
-    </div>
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
-      <div class="font-bold">IJ</div>
-      <div class="opacity-70">Assessment</div>
-    </div>
-    <div class="p-3 text-center rounded-lg border shadow-sm text-xs bg-white">
-      <div class="font-bold">BC</div>
-      <div class="opacity-70">Decision</div>
-    </div>
-  </div>
-
-</div>
-
----
-layout: center
-class: text-center
----
-
-# Static Arrow Example
-
-<div class="relative inline-block">
-
-  <div class="flex items-center gap-10">
-    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
-      <div class="font-semibold">Idea</div>
-      <div class="text-xs opacity-70">Initial concept</div>
-    </div>
-
-    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
-      <div class="font-semibold">IJ</div>
-      <div class="text-xs opacity-70">Investment justification</div>
-    </div>
-
-    <div class="p-4 rounded-xl border shadow min-w-[160px] bg-white">
-      <div class="font-semibold">Business Case</div>
-      <div class="text-xs opacity-70">Approval artifact</div>
-    </div>
-  </div>
-
-  <!-- Example arrow, coordinates will need a bit of trial & error in your project -->
-  <Arrow
-    x1="220"
-    y1="80"
-    x2="360"
-    y2="80"
-    class="text-sky-500 opacity-80" />
-</div>
-
-<p class="mt-6 text-sm opacity-70">
-  Use <code>&lt;Arrow&gt;</code> with <code>x1, y1, x2, y2</code> to point at items on the slide.
-</p>
-
----
-layout: center
-class: text-center
----
-
-# Draggable Arrow
-
-<p class="mb-6 text-sm opacity-80">
-Use <code>&lt;v-drag-arrow&gt;</code> to create draggable arrows you can move around live.
-</p>
-
-<div class="relative inline-block p-8 border rounded-2xl bg-white">
-
-  <div class="grid grid-cols-2 gap-8">
-    <div class="p-4 rounded-xl border bg-slate-50">
-      <div class="font-semibold mb-1">Current State</div>
-      <div class="text-xs opacity-80">
-        Emails + spreadsheets + manual chasing
-      </div>
-    </div>
-
-    <div class="p-4 rounded-xl border bg-emerald-50">
-      <div class="font-semibold mb-1">P.I.T.C.H.</div>
-      <div class="text-xs opacity-80">
-        Standardized workflow + dashboards
-      </div>
-    </div>
-  </div>
-
-  <!-- Draggable arrow overlay -->
-  <v-drag-arrow class="pointer-events-auto" />
-
-</div>
-
----
-layout: center
-class: text-center
----
-
-# Manipulation: Drag & Scale
-
-<p class="mb-6 text-sm opacity-80">
-You can drag and scale elements live during the talk.
-</p>
-
-<Transform :scale="0.9" origin="center">
-  <div class="flex justify-center gap-8">
-    <v-drag>
-      <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
-        <div class="font-semibold mb-1">Risk</div>
-        <div class="text-xs opacity-80">
-          Drag to “attach” it to a project live.
-        </div>
-        </div>
-    </v-drag>
-    <v-drag>
-      <div class="p-4 rounded-xl border shadow bg-white cursor-move min-w-[180px]">
-        <div class="font-semibold mb-1">Benefit</div>
-        <div class="text-xs opacity-80">
-          Move this near the relevant KPI box.
-        </div>
-        </div>
-    </v-drag>
-  </div>
-</Transform>
-
----
-layout: center
-class: text-center
----
-
-# Flow Overview {.text-4xl.font-bold.mb-8}
-
-<div class="flex items-center justify-center gap-6 text-sm">
-
-  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
-    <div class="font-semibold mb-1">Idea</div>
-    <div class="opacity-70">Intake & triage</div>
-  </div>
-
-  <div class="text-3xl">
-    ➜
-  </div>
-
-  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
-    <div class="font-semibold mb-1">IJ</div>
-    <div class="opacity-70">Assessment & sizing</div>
-  </div>
-
-  <div class="text-3xl">
-    ➜
-  </div>
-
-  <div class="p-4 rounded-xl border shadow min-w-[150px] bg-white">
-    <div class="font-semibold mb-1">Business Case</div>
-    <div class="opacity-70">Decision & funding</div>
-  </div>
-</div>
-
-<p class="mt-6 text-sm opacity-80">
-  This is just using Unicode arrows + Tailwind; for vector arrows, use <code>Arrow</code> or <code>v-drag-arrow</code>.
-</p>
-
-<style src="./styles/bchydro.css"></style>
+<!--
+Speaking notes:
+- Use this as your closing transition back to a final ask or Q&A.
+- Reinforce the message: we have a clear plan, defined metrics, and a managed risk profile.
+- End with a simple call to action: with leadership support, we’re ready to move into pilot execution.
+-->
