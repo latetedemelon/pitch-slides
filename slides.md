@@ -729,18 +729,28 @@ transition: slide-left
 
 ::right::
 
-<VSwitch :items="['Idea', 'Design', 'Delivery']" v-slot="{ current, index }">
-  <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
-    <div class="text-xs uppercase tracking-wide opacity-70 mb-2">
-      Phase {{ index + 1 }}
+<VSwitch>
+  <template #1>
+    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
+      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 1</div>
+      <div class="text-3xl font-bold mb-2 text-sky-900">Idea</div>
+      <div class="text-sm opacity-80">Initial concept capture and brainstorming.</div>
     </div>
-    <div class="text-3xl font-bold mb-2 text-sky-900">
-      {{ current }}
+  </template>
+  <template #2>
+    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
+      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 2</div>
+      <div class="text-3xl font-bold mb-2 text-sky-900">Design</div>
+      <div class="text-sm opacity-80">Solution architecture and planning.</div>
     </div>
-    <div class="text-sm opacity-80">
-      Content can change based on the current item.
+  </template>
+  <template #3>
+    <div class="border rounded-2xl p-6 shadow h-full flex flex-col items-center justify-center bg-white">
+      <div class="text-xs uppercase tracking-wide opacity-70 mb-2">Phase 3</div>
+      <div class="text-3xl font-bold mb-2 text-sky-900">Delivery</div>
+      <div class="text-sm opacity-80">Implementation and rollout.</div>
     </div>
-  </div>
+  </template>
 </VSwitch>
 
 ---
