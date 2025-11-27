@@ -50,7 +50,7 @@ transition: slide-up
   - Ideas surface too late
   
 - **No consistent prioritization**
-  - Everything idea competes equally
+  - Every idea competes equally
   
 - **No shared roadmap**
   - Can't see the funnel
@@ -58,9 +58,7 @@ transition: slide-up
 </div>
 
 <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
-  <strong>Problem Statement:</strong> 
-  
-    - This is the problem statment
+  <strong>Problem Statement:</strong> Fragmented tools and processes make it hard to track investment status, compare options, and make timely decisions.
 </div>
 
 <!--
@@ -80,31 +78,23 @@ class: text-center
 
 # The Opportunity
 
-<Transform :scale="0.8" origin="center">
-  <div class="border rounded-2xl p-6 inline-block shadow-lg bg-white">
+<div class="grid grid-cols-1 gap-6">
 
-  <p class="text-sm opacity-80">
-      <code>&lt;Transform&gt;</code> 
-      **Intgptoegrated, auditable workflow:**
-
-      - ✓ Standardized data capture
-      - ✓ End-to-end visibility
-      - ✓ Automated approvals
-      - ✓ Portfolio dashboards
-      
-  </p>
-
+<div class="p-6 rounded-2xl border shadow-lg bg-white inline-block">
+  <div class="font-bold text-lg mb-3">Integrated, auditable workflow:</div>
+  <div class="space-y-2">
+    <div>✓ Standardized data capture</div>
+    <div>✓ End-to-end visibility</div>
+    <div>✓ Automated approvals</div>
+    <div>✓ Portfolio dashboards</div>
   </div>
-</Transform>
+</div>
 
+<div v-click class="text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
+  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
+</div>
 
-  <p class="mt-6 text-sm opacity-80">
-    
-  <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
-      <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
-  </div>
-
-  </p>
+</div>
 
 <!--
 Speaking notes:
@@ -197,7 +187,7 @@ transition: fade
 class: text-center
 ---
 
-# Proposed  Solution & Strategic Alignment
+# Proposed Solution & Strategic Alignment
 
 <div class="grid grid-cols-2 gap-4">
 
@@ -330,15 +320,12 @@ transition: fade
 # Success Criteria
 
 <ul class="list-disc text-left inline-block">
-  
-
-  <li>**Idea → IJ lead time (days)** – target ↓ 40–50%
-  <li>**IJ → Submitted BC (days)** – target ↓ 30–40%
-  <li>**Status latency (days)** </li>
-  <li>**Portfolio freshness (%)** </li>
-  <li>**Resubmission rate ↓ 50%** </li>
-  <li>**Median user effort ↓ 30–40%** </li>
-
+  <li>**Idea → IJ lead time (days)** – target ↓ 40–50%</li>
+  <li>**IJ → Submitted BC (days)** – target ↓ 30–40%</li>
+  <li>**Status latency (days)** – real-time visibility</li>
+  <li>**Portfolio freshness (%)** – current data tracking</li>
+  <li>**Resubmission rate** – target ↓ 50%</li>
+  <li>**Median user effort** – target ↓ 30–40%</li>
 </ul>
 
 <div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-sky-500">
