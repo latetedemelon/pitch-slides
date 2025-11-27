@@ -35,31 +35,37 @@ Speaking notes:
 
 ---
 layout: center
-class: text-left
-transition: slide-up
+transition: fade
+class: text-center
 ---
 
 # The Problem
 
-<div class="text-xl mb-4">
+<div class="grid grid-cols-1 gap-6">
 
-- **Difficult to track status**
-  - Scattered across tools
-  
-- **Low visibility & late alignment**
-  - Ideas surface too late
-  
-- **No consistent prioritization**
-  - Every idea competes equally
-  
-- **No shared roadmap**
-  - Can't see the funnel
+<div class="p-6 rounded-2xl border shadow-lg bg-white inline-block">
+  <div class="font-bold text-lg mb-3">Hidden Inconsistent Process:</div>
+  <div class="space-y-2">
+<div> **Difficult to track status** </div>
+<div> - Scattered across tools </div>
+<div> **Low visibility & late alignment** </div>
+<div>   - Ideas surface too late </div>
+<div> **No consistent prioritization** </div>
+<div>   - Every idea competes equally </div>
+<div> **No shared roadmap** </div>
+<div>   - Can't see the funnel </div>
+  </div>
 
-</div>
 
 <div v-click class="mt-6 text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
   <strong>Problem Statement:</strong> Fragmented tools and processes make it hard to track investment status, compare options, and make timely decisions.
 </div>
+</div>
+</div>
+
+
+
+
 
 <!--
 Speaking notes:
@@ -196,9 +202,9 @@ class: text-center
 ## Integrated digital workflow
 
 
-- 📋 Standard templates & mandatory fields
-- 🔒 Role-based access & audit trail
-- 📊 Portfolio dashboards & exports
+  - 📋 Standard templates & mandatory fields
+  - 🔒 Role-based access & audit trail
+  - 📊 Portfolio dashboards & exports
 
 </div>
 
@@ -206,11 +212,11 @@ class: text-center
   
 ## Strategic Alignment
 
-- **Innovate** → Unlocks external delivery
-- **Execute capital plan** → Governance foundation
-- **Accelerate work** → Smarter working
-- **F26 Action 11** → Grid modernization
-- **Tech Objective 6** → Data-driven platform
+  - **Innovate** → Unlocks external delivery
+  - **Execute capital plan** → Governance foundation
+  - **Accelerate work** → Smarter working
+  - **F26 Action 11** → Grid modernization
+  - **Tech Objective 6** → Data-driven platform
 
 </div>
 
@@ -291,9 +297,8 @@ Speaking notes:
 
 
 - Integrated workflow platform capturing required data and states
-- Role-based access control and immutable audit trail
 - Analytics and portfolio dashboards
-- Export/mapping package for AIPS / PMO systems
+
 
 
 
@@ -319,16 +324,22 @@ transition: fade
 
 # Success Criteria
 
-<ul class="list-disc text-left inline-block">
-  <li>**Idea → IJ lead time (days)** – target ↓ 40–50%</li>
-  <li>**IJ → Submitted BC (days)** – target ↓ 30–40%</li>
-  <li>**Status latency (days)** – real-time visibility</li>
-  <li>**Portfolio freshness (%)** – current data tracking</li>
-  <li>**Resubmission rate** – target ↓ 50%</li>
-  <li>**Median user effort** – target ↓ 30–40%</li>
-</ul>
+<div class="grid grid-cols-1 gap-6">
 
-<div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-sky-500">
+<div class="p-6 rounded-2xl border shadow-lg bg-white inline-block">
+  <div class="space-y-2">
+    <div> <strong>Idea → IJ lead time (days)</strong> – target ↓</div>
+    <div> <strong>IJ → Submitted BC (days)</strong> – target ↓</div>
+    <div> <strong>Status latency (days)</strong>  – real-time visibility</div>
+    <div> <strong>Portfolio freshness (%)</strong>  – current data tracking</div>
+    <div> <strong>Resubmission rate</strong>  – target ↓ </div>
+    <div> <strong>Median user effort</strong>  – target ↓ </div>
+  </div>
+</div>
+
+</div>
+
+<div class="text-center mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-sky-500">
   <p class="text-sm">
     <strong>Success Criteria:</strong> Pilot will be considered successful if we achieve 80% of targets across these KPIs within the pilot period.
   </p>
@@ -553,6 +564,7 @@ Speaking notes:
 - End with the specific asks: sponsorship, mandate, agreement on success criteria, and a small amount of configuration capacity.
 -->
 
+
 ---
 layout: center
 class: sea-break
@@ -570,8 +582,29 @@ Speaking notes:
 - You can pause briefly here, invite initial reactions, or signal the transition into either deeper technical content or (for this deck) the Slidev/demo section.
 -->
 
+
 ---
 
+
+
+---
+layout: center
+class: sea-break
+---
+
+<div class="text-center text-white">
+  <h1 class="text-6xl font-bold mb-4 !text-white !border-white">THE PLAN</h1>
+  <p class="text-2xl opacity-90">Implementation Strategy & Technical Details</p>
+</div>
+
+<!--
+Speaking notes:
+- Signal that we’re shifting from “why” and “what” into “how we’ll execute.”
+- Position this section as the implementation view: dependencies, risks, metrics, and technical/operational details.
+- Let the audience know you’ll keep it high-level but concrete enough to show feasibility.
+-->
+
+---
 
 
 
@@ -624,26 +657,8 @@ Speaking notes:
   - Govern: sustain the solution with a control matrix, automated checks, and ongoing KPI monitoring.
 -->
 
-
-
----
-layout: center
-class: sea-break
 ---
 
-<div class="text-center text-white">
-  <h1 class="text-6xl font-bold mb-4 !text-white !border-white">THE PLAN</h1>
-  <p class="text-2xl opacity-90">Implementation Strategy & Technical Details</p>
-</div>
-
-<!--
-Speaking notes:
-- Signal that we’re shifting from “why” and “what” into “how we’ll execute.”
-- Position this section as the implementation view: dependencies, risks, metrics, and technical/operational details.
-- Let the audience know you’ll keep it high-level but concrete enough to show feasibility.
--->
-
----
 
 # Benefits Dependency Network (Tightened)
 
@@ -690,44 +705,34 @@ Speaking notes:
 -->
 
 ---
+layout: center
+transition: fade
+class: text-center
+---
 
 # Key Performance Indicators
 
-<div class="grid grid-cols-2 gap-6">
+<div class="grid grid-cols-1 gap-6">
 
-<div>
-
-### Outcome / Decision KPIs
-
-
-
-- **Idea → IJ lead time** ✓
-- **IJ → Approved BC lead time** ✓
-- **% Approvals within SLA** ✓
-- **Decision latency per gate** ✓
-
-
-
-### Quality / Control KPIs
-
-
-- **Resubmission rate** ↓ 50%
-
+<div class="p-6 rounded-2xl border shadow-lg bg-white inline-block">
+  <div class="space-y-2">
+    <div> <strong>Idea → IJ lead time</strong> ✓</div>
+    <div> <strong>IJ → Approved BC lead time</strong> ✓</div>
+    <div> <strong>% Approvals within SLA</strong> ✓</div>
+    <div> <strong>Decision latency per gate</strong> ✓</div>
+    <div> <strong>Active planners/week</strong> ✓</div>
+    <div> <strong>Template adherence</strong> ✓</div>
+    <div> <strong>Median user effort</strong> ↓</div>
+    <div> <strong>Resubmission rate</strong> ↓</div>
+  </div>
 </div>
 
-<div>
-
-### Adoption / Change KPIs
-
-- **Active planners/week** ✓
-- **Template adherence** ✓
-- **Median user effort** ↓ 
-
-
-
+<div v-click class="text-center p-3 bg-gradient-to-r from-blue-50 to-emerald-50 rounded border border-blue-100">
+  <strong>Vision:</strong> Accelerate decisions while protecting safety, controls, and affordability
 </div>
 
 </div>
+
 
 <!--
 Speaking notes:
@@ -753,18 +758,16 @@ Speaking notes:
 
 ### Control Matrix
 
-
-
-- **SoD rules by stage**
+**SoD rules by stage**
   - Clear separation of duties
   
-- **Approver role mapping**
+**Approver role mapping**
   - RACI-based authorization
   
-- **Required-field validation**
+**Required-field validation**
   - Completeness gates
   
-- **Change history**
+**Change history**
   - Full audit trail
 
 
@@ -777,28 +780,19 @@ Speaking notes:
 
 
 
-- **Completeness validation**
+**Completeness validation**
   - Pre-submission checks
   
-- **Duplicate detection**
+**Duplicate detection**
   - Prevent redundancy
   
-- **SLA timers**
+**SLA timers**
   - Escalation triggers
   
-- **Late-approval alerts**
+**Late-approval alerts**
   - Accountability notifications
 
 
-
-### Audit Artifacts
-
-
-
-- Immutable event log
-- Approver identity & timestamp
-- Field-level diff tracking
-- Exportable evidence pack
 
 
 
@@ -945,74 +939,7 @@ Speaking notes:
 - Reinforce the change principle: dual-running at the start to reduce risk, but a clear path to P.I.T.C.H. becoming the primary route.
 -->
 
----
 
-# Non-Functional Requirements
-
-<div class="grid grid-cols-2 gap-6">
-
-<div>
-
-### Availability & Reliability
-
-
-
-- **Availability:** ≥ 99.9% during business hours
-- **RTO (Recovery Time):** ≤ 4 hours
-- **RPO (Recovery Point):** ≤ 1 hour
-
-
-
-### Performance
-
-
-
-- **Page interaction:** < 2 seconds median
-  - Common actions (view, edit, submit)
-  
-- **Export jobs:** < 5 minutes
-  - For up to 500 records
-  
-- **Dashboard refresh:** < 10 seconds
-  - Portfolio-level views
-
-
-
-</div>
-
-<div>
-
-### Security & Compliance
-
-
-
-- **Access control:** Role-based (RBAC)
-  - Least privilege principle
-  
-- **Audit trail:** Immutable event log
-  - All actions tracked
-  
-- **Privacy alignment:**
-  - FIPPA compliance
-  - CASL requirements
-  
-- **Data protection:**
-  - Encryption at rest
-  - Encryption in transit
-
-
-
-</div>
-
-</div>
-
-<!--
-Speaking notes:
-- Clarify that we’ve defined non-functional expectations so the pilot feels production-grade where it matters.
-- On the left, outline availability and performance: this has to be responsive enough that it doesn’t become a bottleneck.
-- On the right, reinforce security and compliance: RBAC, audit logs, FIPPA/CASL alignment, and encryption are all explicit requirements.
-- Tie this back to trust: if planners and Finance trust the platform, adoption will follow.
--->
 
 ---
 
@@ -1128,8 +1055,6 @@ Speaking notes:
 - ✓ Configured workflow platform
 - ✓ Control matrix & audit framework
 - ✓ Portfolio dashboard
-- ✓ AIPS export package
-- ✓ Pilot report with KPI outcomes
 
 
 
@@ -1282,10 +1207,6 @@ Speaking notes:
 
 <div>
 
-### Portfolio Dashboard Views
-
-
-
 - **Executive View**
   - Portfolio health at a glance
   - Investment pipeline by quarter
@@ -1301,21 +1222,13 @@ Speaking notes:
   - SLA compliance
   - Bottleneck identification
 
-
-
 </div>
 
 <div>
 
-### Key Metrics Displayed
-
-
 
 - **Cycle time trends**
   - Idea → IJ → BC progression
-  
-- **Portfolio composition**
-  - By type, cost, strategic theme
   
 - **Decision velocity**
   - Approvals per period
@@ -1364,3 +1277,5 @@ Speaking notes:
 - Reinforce the message: we have a clear plan, defined metrics, and a managed risk profile.
 - End with a simple call to action: with leadership support, we’re ready to move into pilot execution.
 -->
+
+<style src="./styles/bchydro.css"></style>
